@@ -8,14 +8,14 @@ export default function SectionResearch() {
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-primary/10 text-primary rounded-full">
-              Featured Research
+              À la une
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold text-neutral-800 mb-4">
-              Latest Publications
+              Dernières publications
             </h2>
             <p className="text-neutral-600 max-w-2xl mx-auto">
-              Explore our latest research papers, policy briefs, and analysis on
-              key digital policy issues.
+              EDécouvrez nos derniers articles de recherche, notes d’orientation
+              et analyses sur les questions clés de politique numérique.
             </p>
           </div>
 
