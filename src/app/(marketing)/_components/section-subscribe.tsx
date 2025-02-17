@@ -26,7 +26,7 @@ export default function SectionSubscribe() {
           <h1 className="uppercase font-bold text-gray-500 text-xl">
             Restez avec nous
           </h1>
-          <h1 className="font-bold text-4xl">
+          <h1 className="font-bold text-3xl md:text-5xl">
             Soyez informé de toutes les activités de la DGTCP
           </h1>
 

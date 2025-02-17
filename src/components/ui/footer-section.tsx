@@ -22,6 +22,8 @@ interface FooterProps {
   };
 }
 
+// bg-[#112673]
+
 export function FooterSection({
   logo,
   brandName,
@@ -31,7 +33,7 @@ export function FooterSection({
   copyright,
 }: FooterProps) {
   return (
-    <footer className="bg-[#112673] w-full text-white">
+    <footer className="bg-white w-full">
       <div className="md:max-w-7xl mx-auto py-24 flex flex-col md:flex-row space-y-5 md:space-y-0">
         <div className="flex justify-center md:justify-start">
           <img

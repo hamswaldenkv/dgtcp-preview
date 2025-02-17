@@ -7,12 +7,14 @@ import HeaderSection from "./(marketing)/_components/header-section";
 import FeatureSection from "./(marketing)/_components/feature-section";
 import SectionResearch from "./(marketing)/_components/section-research";
 import SectionSubscribe from "./(marketing)/_components/section-subscribe";
+import SectionChairman from "./(marketing)/_components/section-chairman";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <HeaderSection />
       <SectionHero />
+      <SectionChairman />
       <FeatureSection />
       <SectionResearch />
       <SectionSubscribe />

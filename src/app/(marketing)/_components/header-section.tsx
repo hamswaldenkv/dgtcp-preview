@@ -2,6 +2,16 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
 
 export default function HeaderSection() {
   const [isScrolled, setIsScrolled] = useState(false);
