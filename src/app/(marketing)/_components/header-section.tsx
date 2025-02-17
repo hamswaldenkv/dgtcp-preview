@@ -64,30 +64,36 @@ export default function HeaderSection() {
             </button>
           </div>
           <nav className="hidden md:flex space-x-10">
-            <a
+            <Link
               href="/"
               className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
             >
               <span>Accueil</span>
-            </a>
-            <a
-              href="/organisation"
+            </Link>
+            <Link
+              href="/"
               className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
             >
               <span>Organisation</span>
-            </a>
-            <a
-              href="/services"
+            </Link>
+            <Link
+              href="/"
               className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
             >
-              <span>Services</span>
-            </a>
-            <a
-              href="/actualites"
+              <span>Documents</span>
+            </Link>
+            <Link
+              href="/"
               className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
             >
               <span>Actualités</span>
-            </a>
+            </Link>
+            <Link
+              href="/"
+              className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
+            >
+              <span>Contacts</span>
+            </Link>
           </nav>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a

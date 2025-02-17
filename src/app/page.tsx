@@ -14,8 +14,8 @@ export default function Home() {
     <div className="min-h-screen">
       <HeaderSection />
       <SectionHero />
-      <SectionChairman />
       <FeatureSection />
+      <SectionChairman />
       <SectionResearch />
       <SectionSubscribe />
       <FooterSection

@@ -17,13 +17,13 @@ export default function SectionHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex flex-col justify-end py-20">
           <div className="container mx-auto flex gap-10">
             <div className="w-full md:w-1/2 space-y-4">
-              <h1 className="text-5xl text-white font-bold">
+              <h1 className="text-5xl text-white font-bold animate-appear">
                 Mise en œuvre opérationnelle de la politique budgétaire en
                 termes d’exécution des dépenses et de suivi des recettes perçues
                 par les administrations financières
               </h1>
 
-              <Button variant={"outline"} size={"lg"}>
+              <Button variant={"outline"} size={"lg"} className="animate-appear delay-100">
                 <DocumentDownload className="size-3 mr-1" />
                 Accéder à notre dernier rapport
               </Button>
