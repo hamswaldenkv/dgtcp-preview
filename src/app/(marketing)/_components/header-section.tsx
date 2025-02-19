@@ -10,8 +10,122 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
+import { Ticket } from "iconsax-react";
+import Image from "next/image";
+
+const components: { title: string; href: string; description: string }[] = [
+  {
+    title: "Alert Dialog",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Hover Card",
+    href: "/docs/primitives/hover-card",
+    description:
+      "For sighted users to preview content available behind a link.",
+  },
+  {
+    title: "Progress",
+    href: "/docs/primitives/progress",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+  {
+    title: "Scroll-area",
+    href: "/docs/primitives/scroll-area",
+    description: "Visually or semantically separates content.",
+  },
+  {
+    title: "Tabs",
+    href: "/docs/primitives/tabs",
+    description:
+      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+  },
+  {
+    title: "Tooltip",
+    href: "/docs/primitives/tooltip",
+    description:
+      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+  },
+];
+
+const menuItems = [
+  {
+    title: "Accueil",
+    href: "/docs/primitives/scroll-area",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    title: "L'organisation",
+    href: "/docs/primitives/scroll-area",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    subMenu: [
+      {
+        title: "Création",
+        href: "/about/history",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "Missions successives",
+        href: "/about/missions",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "Organigramme",
+        href: "/about/leadership",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "Textes référentiels",
+        href: "/about/legal-texts",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "Equipe dirigeante",
+        href: "/about/teams",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "Directeurs généraux adjoints",
+        href: "/about/leadership",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+    ],
+  },
+  {
+    title: "Publications",
+    href: "/docs/primitives/scroll-area",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    subMenu: [
+      {
+        title: "Annonces",
+        href: "/actualites/annonces",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "Communiqué de presse",
+        href: "/actualites/presse",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "Rapports d'activité",
+        href: "/actualites/rapports",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+    ],
+  },
+  {
+    title: "Contacts",
+    href: "/contact",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+];
 
 export default function HeaderSection() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +147,7 @@ export default function HeaderSection() {
             <a href="/">
               <img
                 src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
-                className="h-14"
+                className="h-20"
                 alt="DCGTP"
               />
             </a>
@@ -63,38 +177,65 @@ export default function HeaderSection() {
               </svg>
             </button>
           </div>
-          <nav className="hidden md:flex space-x-10">
-            <Link
-              href="/"
-              className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
-            >
-              <span>Accueil</span>
-            </Link>
-            <Link
-              href="/"
-              className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
-            >
-              <span>Organisation</span>
-            </Link>
-            <Link
-              href="/"
-              className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
-            >
-              <span>Documents</span>
-            </Link>
-            <Link
-              href="/"
-              className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
-            >
-              <span>Actualités</span>
-            </Link>
-            <Link
-              href="/"
-              className="uppercase text-sm font-semibold text-black hover:text-blue-500 py-6 border-b-2 border-transparent"
-            >
-              <span>Contacts</span>
-            </Link>
-          </nav>
+          <NavigationMenu>
+            <NavigationMenuList>
+              {menuItems.map((item, index) => (
+                <NavigationMenuItem key={index}>
+                  {item.subMenu ? (
+                    <>
+                      <NavigationMenuTrigger>
+                        <span className="font-bold uppercase">
+                          {item.title}
+                        </span>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="flex w-[400px] md:w-[500px] lg:w-[600px] gap-5 p-4">
+                          <div className="w-1/3">
+                            <NavigationMenuLink asChild>
+                              <a
+                                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted no-underline outline-none focus:shadow-md relative overflow-hidden"
+                                href="/"
+                              >
+                                <Image
+                                  src="/static/images/bg-cover-01.jpg"
+                                  alt="alt"
+                                  layout="fill"
+                                  objectFit="cover"
+                                />
+                              </a>
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="w-2/3">
+                            <ul className="grid gap-3 md:grid-cols-2">
+                              {item.subMenu.map((subItem, x) => (
+                                <ListItem
+                                  key={x}
+                                  href={subItem.href}
+                                  title={subItem.title}
+                                >
+                                  {subItem.description}
+                                </ListItem>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </NavigationMenuContent>
+                    </>
+                  ) : (
+                    <Link href={item.href} legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        <span className="font-bold uppercase">
+                          {item.title}
+                        </span>
+                      </NavigationMenuLink>
+                    </Link>
+                  )}
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
               href="/#"
@@ -128,11 +269,7 @@ export default function HeaderSection() {
             <ul className="ml-10 flex space-x-2">
               {" "}
               <li className="lang-item lang-item-4 lang-item-fr current-lang lang-item-first">
-                <a
-                  lang="fr-FR"
-                  hrefLang="fr-FR"
-                  href="https://www.dgtcp.cd/organisation/"
-                >
+                <a lang="fr-FR" hrefLang="fr-FR" href="https://www.dgtcp.cd/">
                   <img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEVzldTg4ODS0tLxDwDtAwDjAADD0uz39/fy8vL3k4nzgna4yOixwuXu7u7s6+zn5+fyd2rvcGPtZljYAABrjNCpvOHrWkxegsqfs93NAADpUUFRd8THAABBa7wnVbERRKa8vLyxsLCoqKigoKClCvcsAAAAXklEQVR4AS3JxUEAQQAEwZo13Mk/R9w5/7UERJCIGIgj5qfRJZEpPyNfCgJTjMR1eRRnJiExFJz5Mf1PokWr/UztIjRGQ3V486u0HO55m634U6dMcf0RNPfkVCTvKjO16xHA8miowAAAAABJRU5ErkJggg=="
                     alt="Français"
@@ -146,7 +283,7 @@ export default function HeaderSection() {
                 <a
                   lang="en-US"
                   hrefLang="en-US"
-                  href="https://www.dgtcp.cd/en/organization-en/"
+                  href="https://www.dgtcp.cd/en/"
                 >
                   <img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII="
@@ -164,3 +301,28 @@ export default function HeaderSection() {
     </div>
   );
 }
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  );
+});

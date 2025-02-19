@@ -49,3 +49,28 @@ export const PolySansWeb = localFont({
     },
   ],
 });
+
+export const CooperHewitt = localFont({
+  src: [
+    {
+      path: "../app/fonts/cooper-hewitt/CooperHewitt-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../app/fonts/cooper-hewitt/CooperHewitt-Medium.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../app/fonts/cooper-hewitt/CooperHewitt-Semibold.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../app/fonts/cooper-hewitt/CooperHewitt-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+});

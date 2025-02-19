@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
-import { PolySansWeb } from "@/constants/fonts";
+import { CooperHewitt } from "@/constants/fonts";
 
 export const metadata: Metadata = {
   title:
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${PolySansWeb.className} antialiased`}>
+      <body className={`${CooperHewitt.className} antialiased`}>
         {children}
         <Toaster />
       </body>
