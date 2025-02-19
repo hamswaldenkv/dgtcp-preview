@@ -23,7 +23,7 @@ const sections = [
       },
       {
         name: "MOKAKO KOLO Lydia",
-        role: "DMGP",
+        role: "Direction des moyens généraux du personnel",
         photo_url: "/static/images/profile-woman-placeholder.jpg",
       },
     ],
@@ -43,7 +43,7 @@ const sections = [
       },
       {
         name: "SULIA KITAMBALA Mireille",
-        role: "Direction juridique et contentieux financier",
+        role: "Direction du Trésor et Moyens de Financement",
         photo_url: "/static/images/profile-woman-placeholder.jpg",
       },
       {
