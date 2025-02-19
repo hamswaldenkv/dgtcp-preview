@@ -1,14 +1,11 @@
 import { Category } from "iconsax-react";
 import SectionRelated from "../../_components/section-related";
+import SectionHeading from "../../_components/section-heading";
 
 export default function Page() {
   return (
     <div className="min-h-[50vh] bg-white space-y-10">
-      <div className="h-[15rem] bg-[#112673] flex flex-col justify-end p-10">
-        <div className="container mx-auto">
-          <h1 className="text-white text-4xl font-bold">Histoire</h1>
-        </div>
-      </div>
+      <SectionHeading title="Histoire" />
 
       <div className="container mx-auto flex gap-10">
         <div className="h-[40rem] w-1/3 bg-slate-100"></div>

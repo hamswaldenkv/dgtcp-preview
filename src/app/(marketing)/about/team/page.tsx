@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import SectionHeading from "../../_components/section-heading";
 
 const sections = [
   {
@@ -58,11 +59,11 @@ const sections = [
 export default function Page() {
   return (
     <div className="min-h-[50vh] bg-slate-300/10">
-      <div className="container mx-auto space-y-5 py-20">
-        <h1 className="text-4xl font-bold mb-4">
-          Directeurs généraux et adjoints
-        </h1>
+      <div className="min-h-[50vh] bg-white space-y-10">
+        <SectionHeading title="Equipe" />
+      </div>
 
+      <div className="container mx-auto space-y-5 py-20">
         <div className="space-y-14">
           {sections.map((section, index) => (
             <div key={index} className="space-y-5">

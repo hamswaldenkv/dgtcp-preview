@@ -1,7 +1,9 @@
+import SectionHeading from "../../_components/section-heading";
+
 export default function Page() {
   return (
-    <div className="min-h-[50vh] bg-slate-300/10">
-      <h1>Textes référentiels</h1>
+    <div className="min-h-[50vh] bg-white space-y-10">
+      <SectionHeading title="Textes référentiels" />
     </div>
   );
 }
