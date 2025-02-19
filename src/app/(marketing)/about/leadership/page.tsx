@@ -61,7 +61,7 @@ export default function Page() {
       <div className="container mx-auto space-y-5 py-20">
         <h1 className="text-4xl font-bold mb-4">Leadership</h1>
 
-        <div className="space-y-5">
+        <div className="space-y-14">
           {sections.map((section, index) => (
             <div key={index} className="space-y-5">
               <h2 className="text-xl font-semibold mb-4">{section.title}</h2>
