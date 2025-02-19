@@ -96,11 +96,6 @@ const menuItems = [
         href: "/about/leadership",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
-      {
-        title: "Directeurs généraux adjoints",
-        href: "/about/team",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
     ],
   },
   {
