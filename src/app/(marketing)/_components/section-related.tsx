@@ -7,7 +7,7 @@ interface Props {
   links: Array<{
     href: string;
     title: string;
-    description: string;
+    description?: string;
     photo_url: string;
   }>;
 }
@@ -28,9 +28,11 @@ export default function SectionRelated({ links }: Props) {
                     objectFit="cover"
                   />
                 </div>
-                <div className="h-36 p-10">
+                <div className="h-[10rem] p-10">
                   <h1 className="font-bold text-2xl">{link.title}</h1>
-                  <p>{link.description}</p>
+                  {link.description && (
+                    <p className="text-base">{link.description}</p>
+                  )}
                   <div className="flex justify-end">
                     <ArrowCircleRight className="size-8 text-primary" />
                   </div>

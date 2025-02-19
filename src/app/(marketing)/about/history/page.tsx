@@ -1,4 +1,3 @@
-import { Category } from "iconsax-react";
 import SectionRelated from "../../_components/section-related";
 import SectionHeading from "../../_components/section-heading";
 
