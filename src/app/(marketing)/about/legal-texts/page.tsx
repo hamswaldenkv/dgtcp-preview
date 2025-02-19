@@ -9,7 +9,7 @@ export default function Page() {
       <div className="container mx-auto flex gap-10">
         <div className="h-[40rem] w-1/3 bg-slate-100 hidden"></div>
         <div className="flex-1 space-y-5">
-          <h1 className="text-2xl font-bold">
+          <h1 className="text-4xl font-bold">
             DECRET PORTANT CREATION, MISSIONS, ORGANISATION ET FONCTIONNEMENT DE
             LA DIRECTION GENÉRALE DU TRÉSOR ET DE LA COMPTABILITÉ PUBLIQUE,
             «DGTCP »EN SIGLE

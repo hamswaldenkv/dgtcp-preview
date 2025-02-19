@@ -9,7 +9,7 @@ export default function Page() {
       <div className="container mx-auto flex gap-10">
         <div className="h-[40rem] w-1/3 bg-slate-100 hidden"></div>
         <div className="flex-1 space-y-5">
-          <h1 className="text-2xl font-bold">
+          <h1 className="text-4xl font-bold">
             ANNEXE AU DECRET N° 22/54 DU 30 DECEMBRE 2022 FIXANT LE CADRE ET LES
             STRUCTURES ORGANIQUES DE LA DIRECTION GENERALE DU TRESOR ET DE LA
             COMPTABILITE PUBLIQUE, « DGTCP » EN SIGLE
