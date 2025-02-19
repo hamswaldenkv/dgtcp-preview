@@ -48,12 +48,12 @@ export function FooterSection({
             <h1 className="font-bold font-hkgrotesk">Accès Rapide</h1>
             <ul className="space-y-2 mt-5">
               <li>
-                <Link className="hover:text-primary2" href="/organisation">
+                <Link className="hover:text-primary2" href="/about/history">
                   <span className="text-sm font-medium">A propos</span>
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary2" href="/organisation">
+                <Link className="hover:text-primary2" href="/about/history">
                   <span className="text-sm font-medium">Organisation</span>
                 </Link>
               </li>
@@ -63,12 +63,12 @@ export function FooterSection({
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary2" href="/organisation/documents">
+                <Link className="hover:text-primary2" href="/about/history">
                   <span className="text-sm font-medium">Documents</span>
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary2" href="/contact">
+                <Link className="hover:text-primary2" href="/">
                   <span className="text-sm font-medium">Contact</span>
                 </Link>
               </li>
