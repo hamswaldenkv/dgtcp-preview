@@ -43,6 +43,62 @@ export default function SectionSubscribe() {
             Confirmer
             <ArrowRightCircle className="size-3 ml-2" />
           </Button>
+
+          <div className="pt-10 space-y-3">
+            <h1 className="font-bold text-gray-500 text-xl">
+              Suivez le ministère sur les réseaux sociaux
+            </h1>
+            <ul className="flex items-center gap-5 md:gap-10">
+              <li>
+                <a href="https://www.x.com/dgtcp.cd" target="_blank">
+                  <img
+                    src="/static/icons/logo-x.svg"
+                    alt=""
+                    className="h-6 text-primary"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/dgtcp.cd" target="_blank">
+                  <img
+                    src="/static/icons/logo-facebook.svg"
+                    alt=""
+                    className="h-6 text-primary"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/dgtcp/"
+                  target="_blank"
+                >
+                  <img
+                    src="/static/icons/logo-linkedin.svg"
+                    alt=""
+                    className="h-6 text-blue-500"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/dgtcp.cd" target="_blank">
+                  <img
+                    src="/static/icons/logo-instagram.svg"
+                    alt=""
+                    className="h-6 text-primary"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@dgtcp.cd" target="_blank">
+                  <img
+                    src="/static/icons/logo-youtube.svg"
+                    alt=""
+                    className="h-6 text-primary"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

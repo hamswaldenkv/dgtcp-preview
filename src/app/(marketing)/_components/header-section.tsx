@@ -58,16 +58,16 @@ const components: { title: string; href: string; description: string }[] = [
 const menuItems = [
   {
     title: "Accueil",
-    href: "/docs/primitives/scroll-area",
+    href: "/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     title: "L'organisation",
-    href: "/docs/primitives/scroll-area",
+    href: "/about",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     subMenu: [
       {
-        title: "Création",
+        title: "Création & Histoire",
         href: "/about/history",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
@@ -78,7 +78,7 @@ const menuItems = [
       },
       {
         title: "Organigramme",
-        href: "/about/leadership",
+        href: "/about/leaderboard-map",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
       {
@@ -87,20 +87,25 @@ const menuItems = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
       {
+        title: "Attributions",
+        href: "/about/attributions",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
         title: "Equipe dirigeante",
-        href: "/about/teams",
+        href: "/about/leadership",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
       {
         title: "Directeurs généraux adjoints",
-        href: "/about/leadership",
+        href: "/about/team",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
     ],
   },
   {
     title: "Publications",
-    href: "/docs/primitives/scroll-area",
+    href: "/actualites",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     subMenu: [
       {

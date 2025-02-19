@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface FooterProps {
   logo: React.ReactNode;
@@ -47,37 +48,29 @@ export function FooterSection({
             <h1 className="font-bold font-hkgrotesk">Accès Rapide</h1>
             <ul className="space-y-2 mt-5">
               <li>
-                <a className="hover:text-primary2" href="/organisation">
+                <Link className="hover:text-primary2" href="/organisation">
                   <span className="text-sm font-medium">A propos</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary2" href="/organisation">
+                <Link className="hover:text-primary2" href="/organisation">
                   <span className="text-sm font-medium">Organisation</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary2" href="/services">
-                  <span className="text-sm font-medium">Services</span>
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-primary2" href="/actualites">
+                <Link className="hover:text-primary2" href="/actualites">
                   <span className="text-sm font-medium">Actualités</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className="hover:text-primary2"
-                  href="/organisation/documents"
-                >
+                <Link className="hover:text-primary2" href="/organisation/documents">
                   <span className="text-sm font-medium">Documents</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary2" href="/contact">
+                <Link className="hover:text-primary2" href="/contact">
                   <span className="text-sm font-medium">Contact</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
