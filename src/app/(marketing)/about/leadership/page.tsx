@@ -4,51 +4,61 @@ import Image from "next/image";
 
 const sections = [
   {
-    title: "Directeur des Ressources Humaines",
+    title: "Direction Générale",
     members: [
       {
-        name: "Monsieur X",
-        role: "Directeur des Ressources Humaines",
-        photo_url: "/static/images/profile-chairman.jpg",
+        name: "MAABE MUANYIMI Serge",
+        role: "DG/TR",
+        photo_url: "/static/images/leadership-001.jpg",
       },
     ],
   },
   {
-    title: "Directeur des Ressources Humaines",
+    title: "Directeurs adjoints",
     members: [
       {
-        name: "Monsieur X",
-        role: "Directeur des Ressources Humaines",
-        photo_url: "/static/images/profile.jpg",
+        name: "KINDUELO LUMBU Lyvie",
+        role: "DGA/AF",
+        photo_url: "/static/images/profile-woman-placeholder.jpg",
       },
       {
-        name: "Monsieur X",
-        role: "Directeur des Ressources Humaines",
-        photo_url: "/static/images/profile.jpg",
-      },
-      {
-        name: "Monsieur X",
-        role: "Directeur des Ressources Humaines",
-        photo_url: "/static/images/profile.jpg",
+        name: "MOKAKO KOLO Lydia",
+        role: "DMGP",
+        photo_url: "/static/images/profile-woman-placeholder.jpg",
       },
     ],
   },
   {
-    title: "Directeur des Ressources Humaines",
+    title: "Directeurs",
     members: [
       {
-        name: "Monsieur X",
-        role: "Directeur des Ressources Humaines",
+        name: "KAZADI KATALA Désiré",
+        role: "Directeur Informatique",
         photo_url: "/static/images/profile.jpg",
       },
       {
-        name: "Monsieur X",
-        role: "Directeur des Ressources Humaines",
+        name: "MUNDELA MUANZA Franck",
+        role: "Directeur / Inspection de service du trésor",
         photo_url: "/static/images/profile.jpg",
       },
       {
-        name: "Monsieur X",
-        role: "Directeur des Ressources Humaines",
+        name: "SULIA KITAMBALA Mireille",
+        role: "Direction juridique et contentieux financier",
+        photo_url: "/static/images/profile-woman-placeholder.jpg",
+      },
+      {
+        name: "NSIMBA NKINKI Eddy",
+        role: "Direction de la Réglementation et de la Qualité Comptable",
+        photo_url: "/static/images/profile.jpg",
+      },
+      {
+        name: "MATARY MOWENGE MORYWELL Jean-Claude",
+        role: "Agence Centrale des Comptables du Trésor",
+        photo_url: "/static/images/profile.jpg",
+      },
+      {
+        name: "MAFUTALA BEKONDA Jean-Paul",
+        role: "Direction juridique et Contentieux Financier",
         photo_url: "/static/images/profile.jpg",
       },
     ],
