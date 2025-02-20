@@ -139,11 +139,17 @@ export default function HeaderSection() {
   return (
     <div className="relative bg-white border-b">
       <div className="py-5 border-b flex justify-center">
-        <img
-          src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
-          className="h-20"
-          alt="DCGTP"
-        />
+        <a
+          target="_blank"
+          href="https://finances.gouv.cd/"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
+            className="h-20"
+            alt="Finances Gouvernementales"
+          />
+        </a>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center md:justify-start md:space-x-10 py-1">
