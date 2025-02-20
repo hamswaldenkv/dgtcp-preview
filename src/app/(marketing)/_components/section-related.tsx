@@ -31,7 +31,7 @@ export default function SectionRelated({ links }: Props) {
                 <div className="h-[10rem] p-10">
                   <h1 className="font-bold text-2xl">{link.title}</h1>
                   {link.description && (
-                    <p className="text-base">{link.description}</p>
+                    <p className="text-sm">{link.description}</p>
                   )}
                   <div className="flex justify-end">
                     <ArrowCircleRight className="size-8 text-primary" />

@@ -1,56 +1,49 @@
 import SectionRelated from "../../_components/section-related";
 import SectionHeading from "../../_components/section-heading";
+import Image from "next/image";
 
 export default function Page() {
   return (
     <div className="min-h-[50vh] bg-white space-y-10">
-      <SectionHeading title="Histoire" />
+      <SectionHeading title="Présentation" />
 
       <div className="container mx-auto flex gap-10">
-        <div className="h-[40rem] w-1/3 bg-slate-100"></div>
+        <div className="h-[40rem] w-1/3 bg-slate-100 relative">
+          <Image
+            src="/static/images/about-office-01.webp"
+            alt="alt"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div className="flex-1 p-10 space-y-5">
-          <h1 className="text-4xl font-bold">Histoire de la DGTCP</h1>
+          <h1 className="text-4xl font-bold">À propos de la DGTCP</h1>
           <p className="text-base">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum
-            etiam tincidunt dictumst vestibulum ultricies ac duis dictum
-            aliquam. Amet tortor mauris quam elit duis vivamus nullam
-            consectetur. Dictumst enim nisi phasellus massa laoreet himenaeos
-            ipsum porttitor. Eget rutrum nec nascetur consectetur; sapien
-            interdum nec tristique arcu. Aptent porta nullam nunc; maximus
-            egestas odio. Tristique velit purus neque tristique ullamcorper
-            augue maecenas. Fames potenti eget vivamus finibus mauris purus
-            tortor. Lacinia in nisi lectus phasellus gravida, augue dapibus
-            pulvinar viverra. Mattis imperdiet tortor placerat ad curabitur vel.
-            Sapien nunc aenean cras sociosqu nisl molestie nec. Mollis imperdiet
-            interdum imperdiet euismod egestas at platea.
+            La Direction Générale du Trésor et de la Comptabilité Publique
+            (DGTCP) de la République Démocratique du Congo (RDC) est une
+            institution essentielle au bon fonctionnement des finances
+            publiques. Elle joue un rôle clé dans la gestion des ressources
+            financières de l’État, en supervisant la collecte, la gestion, et le
+            contrôle des fonds publics. Son mandat principal est de garantir
+            l'équilibre et la transparence des finances publiques, tout en
+            assurant la bonne exécution des politiques économiques et
+            budgétaires du pays.
           </p>
           <p className="text-base">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum
-            etiam tincidunt dictumst vestibulum ultricies ac duis dictum
-            aliquam. Amet tortor mauris quam elit duis vivamus nullam
-            consectetur. Dictumst enim nisi phasellus massa laoreet himenaeos
-            ipsum porttitor. Eget rutrum nec nascetur consectetur; sapien
-            interdum nec tristique arcu. Aptent porta nullam nunc; maximus
-            egestas odio. Tristique velit purus neque tristique ullamcorper
-            augue maecenas. Fames potenti eget vivamus finibus mauris purus
-            tortor. Lacinia in nisi lectus phasellus gravida, augue dapibus
-            pulvinar viverra. Mattis imperdiet tortor placerat ad curabitur vel.
-            Sapien nunc aenean cras sociosqu nisl molestie nec. Mollis imperdiet
-            interdum imperdiet euismod egestas at platea.
+            La DGTCP est responsable de l'élaboration et de la mise en œuvre des
+            stratégies fiscales, de la gestion de la trésorerie de l'État, de la
+            supervision de la comptabilité publique et de la gestion des dettes
+            publiques. Elle veille également à la régularité et à la
+            transparence des opérations financières, à la répartition des fonds
+            publics et à la mise en œuvre de mesures visant à renforcer la
+            gouvernance financière.
           </p>
           <p className="text-base">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum
-            etiam tincidunt dictumst vestibulum ultricies ac duis dictum
-            aliquam. Amet tortor mauris quam elit duis vivamus nullam
-            consectetur. Dictumst enim nisi phasellus massa laoreet himenaeos
-            ipsum porttitor. Eget rutrum nec nascetur consectetur; sapien
-            interdum nec tristique arcu. Aptent porta nullam nunc; maximus
-            egestas odio. Tristique velit purus neque tristique ullamcorper
-            augue maecenas. Fames potenti eget vivamus finibus mauris purus
-            tortor. Lacinia in nisi lectus phasellus gravida, augue dapibus
-            pulvinar viverra. Mattis imperdiet tortor placerat ad curabitur vel.
-            Sapien nunc aenean cras sociosqu nisl molestie nec. Mollis imperdiet
-            interdum imperdiet euismod egestas at platea.
+            Dans ses efforts pour moderniser et rationaliser la gestion des
+            finances publiques, la Direction travaille en étroite collaboration
+            avec d’autres entités publiques et privées, et met en place des
+            réformes visant à améliorer l'efficacité des systèmes de contrôle
+            financier.
           </p>
         </div>
       </div>
@@ -60,20 +53,20 @@ export default function Page() {
           {
             href: "/about/leadership",
             title: "Leadership",
-            description: "Leadership",
-            photo_url: "/static/images/bg-cover-01.jpg",
+            description: "Equipe dirigeante de la DGTCP",
+            photo_url: "/static/images/about-office-01.webp",
+          },
+          {
+            href: "/about/missions",
+            title: "Missions",
+            description: "Missions de la DGTCP",
+            photo_url: "/static/images/about-office-02.webp",
           },
           {
             href: "/about/legal-texts",
             title: "Textes référentiels",
-            description: "Textes référentiels",
-            photo_url: "/static/images/cover-placeholder.jpeg",
-          },
-          {
-            href: "/about/missions",
-            title: "Missions successives",
-            description: "Missions successives",
-            photo_url: "/static/images/cover-placeholder.jpeg",
+            description: "Textes référentiels portant création, missions, organisation et fonctionnement",
+            photo_url: "/static/images/bg-cover-01.jpg",
           },
         ]}
       />
