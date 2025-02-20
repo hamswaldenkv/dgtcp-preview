@@ -26,7 +26,7 @@ const menuItems = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     subMenu: [
       {
-        title: "À propos de la DGTCP",
+        title: "Présentation",
         href: "/about/history",
         description: "Decouvrez l'historique de la DGTCP.",
       },
