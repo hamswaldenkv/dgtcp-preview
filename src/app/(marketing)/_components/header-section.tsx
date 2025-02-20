@@ -53,14 +53,14 @@ const menuItems = [
       {
         title: "Equipe dirigeante",
         href: "/about/leadership",
-        description: "Decouvrez l'equipe dirigeante de la DGTCP.",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
     ],
   },
   {
     title: "Publications",
     href: "/actualites",
-    description: "Decouvrez les publications de la DGTCP.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     subMenu: [
       {
         title: "Annonces",
