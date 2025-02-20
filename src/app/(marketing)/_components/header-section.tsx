@@ -138,8 +138,15 @@ export default function HeaderSection() {
 
   return (
     <div className="relative bg-white border-b">
+      <div className="py-5 border-b flex justify-center">
+        <img
+          src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
+          className="h-20"
+          alt="DCGTP"
+        />
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center md:justify-start md:space-x-10 py-1">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="/">
               {/** <img
@@ -149,7 +156,7 @@ export default function HeaderSection() {
               /> */}
               <img
                 src="/static/images/logo-main-nav.jpeg"
-                className="h-20"
+                className="h-16"
                 alt="DCGTP"
               />
             </a>
