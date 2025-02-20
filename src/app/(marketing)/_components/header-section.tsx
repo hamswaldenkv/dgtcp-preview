@@ -155,7 +155,7 @@ export default function HeaderSection() {
                 alt="DCGTP"
               /> */}
               <img
-                src="/static/images/logo-main-nav.jpeg"
+                src="/static/images/logo-main-square.jpeg"
                 className="h-16"
                 alt="DCGTP"
               />

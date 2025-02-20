@@ -38,8 +38,8 @@ export function FooterSection({
       <div className="md:max-w-7xl mx-auto py-24 flex flex-col md:flex-row space-y-5 md:space-y-0">
         <div className="flex justify-center md:justify-start">
           <img
-            src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
-            className="h-24"
+            src="/static/images/logo-main-nav.jpeg"
+            className="h-28"
             alt="DCGTP"
           />
         </div>
