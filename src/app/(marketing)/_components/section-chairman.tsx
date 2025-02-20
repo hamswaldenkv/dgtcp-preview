@@ -5,7 +5,7 @@ import React from "react";
 export default function SectionChairman() {
   return (
     <div className="bg-[#112673]">
-      <section className="py-32 container mx-auto">
+      <section className="py-16 container mx-auto">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col gap-12 md:flex-row">
             <img
