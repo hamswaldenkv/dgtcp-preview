@@ -5,16 +5,13 @@ import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { Ticket } from "iconsax-react";
 import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
@@ -145,8 +142,13 @@ export default function HeaderSection() {
         <div className="flex justify-between items-center md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="/">
-              <img
+              {/** <img
                 src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
+                className="h-20"
+                alt="DCGTP"
+              /> */}
+              <img
+                src="/static/images/logo-main-nav.jpeg"
                 className="h-20"
                 alt="DCGTP"
               />
