@@ -14,44 +14,6 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
-
 const menuItems = [
   {
     title: "Accueil",
@@ -64,41 +26,41 @@ const menuItems = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     subMenu: [
       {
-        title: "Création & Histoire",
+        title: "À propos de la DGTCP",
         href: "/about/history",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Missions successives",
-        href: "/about/missions",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Organigramme",
-        href: "/about/leaderboard-map",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Textes référentiels",
-        href: "/about/legal-texts",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Decouvrez l'historique de la DGTCP.",
       },
       {
         title: "Attributions",
         href: "/about/attributions",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Decouvrez les attributions de la DGTCP.",
+      },
+      {
+        title: "Missions",
+        href: "/about/missions",
+        description: "Decouvrez les missions de la DGTCP.",
+      },
+      {
+        title: "Textes référentiels",
+        href: "/about/legal-texts",
+        description: "Decouvrez les textes référentiels de la DGTCP.",
+      },
+      {
+        title: "Organigramme",
+        href: "/about/leaderboard-map",
+        description: "Decouvrez l'organigramme de la DGTCP.",
       },
       {
         title: "Equipe dirigeante",
         href: "/about/leadership",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Decouvrez l'equipe dirigeante de la DGTCP.",
       },
     ],
   },
   {
     title: "Publications",
     href: "/actualites",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Decouvrez les publications de la DGTCP.",
     subMenu: [
       {
         title: "Annonces",
