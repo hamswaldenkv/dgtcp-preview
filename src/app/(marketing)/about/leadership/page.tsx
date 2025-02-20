@@ -19,12 +19,12 @@ const sections = [
       {
         name: "KINDUELO LUMBU Lyvie",
         role: "DGA/AF",
-        photo_url: "/static/images/profile-woman-placeholder.jpg",
+        photo_url: "/static/images/about-person-02.webp",
       },
       {
         name: "MOKAKO KOLO Lydia",
         role: "Direction des moyens généraux du personnel",
-        photo_url: "/static/images/profile-woman-placeholder.jpg",
+        photo_url: "/static/images/about-person-02.webp",
       },
     ],
   },
