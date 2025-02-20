@@ -5,7 +5,7 @@ import { DocumentDownload } from "iconsax-react";
 
 export default function SectionHero() {
   return (
-    <div className="min-h-[55vh] flex flex-col bg-white">
+    <div className="min-h-[65vh] md:min-h-[55vh] flex flex-col bg-white">
       <div className="flex-1 relative">
         <Image
           src="/static/images/bg-cover-01.jpg"
@@ -23,7 +23,11 @@ export default function SectionHero() {
                 par les administrations financières
               </h1>
 
-              <Button variant={"outline"} size={"lg"} className="animate-appear delay-100">
+              <Button
+                variant={"outline"}
+                size={"lg"}
+                className="animate-appear delay-100"
+              >
                 <DocumentDownload className="size-3 mr-1" />
                 Accéder à notre dernier rapport
               </Button>
