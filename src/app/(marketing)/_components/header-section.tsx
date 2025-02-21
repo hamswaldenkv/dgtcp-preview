@@ -107,9 +107,9 @@ export default function HeaderSection() {
           rel="noopener noreferrer"
         >
           <img
-            src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
+            src="/static/images/logo-main-square.jpeg"
             className="h-20"
-            alt="Finances Gouvernementales"
+            alt="DGTCP"
           />
         </a>
       </div>
@@ -123,9 +123,9 @@ export default function HeaderSection() {
                 alt="DCGTP"
               /> */}
               <img
-                src="/static/images/logo-main-square.jpeg"
+                src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
                 className="h-16"
-                alt="DCGTP"
+                alt="Finances Gouvernementales"
               />
             </a>
           </div>
@@ -154,7 +154,7 @@ export default function HeaderSection() {
               </svg>
             </button>
           </div>
-          <NavigationMenu>
+          <NavigationMenu className="z-[9999]">
             <NavigationMenuList>
               {menuItems.map((item, index) => (
                 <NavigationMenuItem key={index}>
