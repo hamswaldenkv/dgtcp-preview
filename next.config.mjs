@@ -12,6 +12,7 @@ const nextConfig = {
       "ekonzostream-uploads-t1.s3.eu-central-1.amazonaws.com",
       "localhost",
       "www.launchuicomponents.com",
+      'images.unsplash.com'
     ],
   },
 
