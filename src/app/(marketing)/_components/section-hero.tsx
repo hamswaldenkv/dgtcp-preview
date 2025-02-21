@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { ArrowRight, ArrowLeft } from "iconsax-react";
 import { cn } from "@/lib/utils";
@@ -15,7 +15,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    title: "Visite du ministre à Kinshasa Arena",
+    title: "Affectation des agents & cadres",
     description:
       "Le Ministre Doudou Fwamba Likunde, a effectué une visite d'inspection pour constater la reprise des travaux de Kinshasa Arena après une longue période d'arrêt.",
     image: "/static/images/home-slider-01.jpeg",
@@ -39,14 +39,17 @@ const slides: Slide[] = [
   },
 ];
 
+const AUTO_SLIDE_INTERVAL = 5000; // 5 seconds
+
 export default function SectionHero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState<"left" | "right">("right");
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setDirection("right");
     setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
+  }, []);
 
   const prevSlide = () => {
     setDirection("left");
@@ -57,6 +60,24 @@ export default function SectionHero() {
     setDirection(index > currentSlide ? "right" : "left");
     setCurrentSlide(index);
   };
+
+  // Auto-advance slides
+  useEffect(() => {
+    let intervalId: NodeJS.Timeout;
+
+    if (isAutoPlaying) {
+      intervalId = setInterval(() => {
+        nextSlide();
+      }, AUTO_SLIDE_INTERVAL);
+    }
+
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [isAutoPlaying, nextSlide]);
+
   return (
     <div className="bg-white">
       <div className="relative w-full h-[65vh] overflow-hidden bg-space-dark">

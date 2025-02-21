@@ -100,7 +100,7 @@ export default function HeaderSection() {
 
   return (
     <div className="relative bg-white border-b">
-      <div className="py-5 border-b flex justify-center">
+      <div className="py-5 border-b hidden justify-center">
         <a
           target="_blank"
           href="https://finances.gouv.cd/"
@@ -123,9 +123,9 @@ export default function HeaderSection() {
                 alt="DCGTP"
               /> */}
               <img
-                src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
+                src="/static/images/logo-main-nav.jpeg"
                 className="h-16"
-                alt="Finances Gouvernementales"
+                alt="DCGTP"
               />
             </a>
           </div>
@@ -214,35 +214,6 @@ export default function HeaderSection() {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a
-              href="/#"
-              className="whitespace-nowrap items-center justify-center space-x-3 px-6 py-2 text-primary hidden"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                aria-hidden="true"
-                className="w-4 h-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-              <span className="text-uppercase text-sm font-bold">
-                Recherche
-              </span>
-            </a>
-            <a
-              href="mailto:secretariat-dg@dgtcp.cd"
-              className="whitespace-nowrap inline-flex items-center justify-center px-6 py-2 border border-1 border-primary rounded-sm text-sm font-bold text-primary bg-white"
-            >
-              Nous écrire
-            </a>
             <ul className="ml-10 flex space-x-2">
               {" "}
               <li className="lang-item lang-item-4 lang-item-fr current-lang lang-item-first">
@@ -272,6 +243,20 @@ export default function HeaderSection() {
                 </a>
               </li>
             </ul>
+          </div>
+
+          <div className="py-5 border-b flex justify-center">
+            <a
+              target="_blank"
+              href="https://finances.gouv.cd/"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
+                className="h-12"
+                alt="Ministère des finances"
+              />
+            </a>
           </div>
         </div>
       </div>
