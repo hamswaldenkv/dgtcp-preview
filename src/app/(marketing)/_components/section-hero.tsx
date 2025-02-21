@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { ArrowCircleRight, ArrowCircleLeft } from "iconsax-react";
+import { ArrowRight, ArrowLeft } from "iconsax-react";
 import { cn } from "@/lib/utils";
 
 interface Slide {
@@ -15,27 +15,27 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    title: "Exploring Mars: New Discoveries",
+    title: "Visite du ministre à Kinshasa Arena",
     description:
-      "Recent findings from the Perseverance rover reveal ancient waterways on the Red Planet.",
+      "Le Ministre Doudou Fwamba Likunde, a effectué une visite d'inspection pour constater la reprise des travaux de Kinshasa Arena après une longue période d'arrêt.",
     image: "/static/images/home-slider-01.jpeg",
-    category: "Mars Exploration",
+    category: "Annonces",
   },
   {
     id: 2,
-    title: "Webb Telescope's Latest Images",
+    title: "Inauguration du Centre Financier de Kinshasa",
     description:
-      "Stunning new imagery of distant galaxies captured by the James Webb Space Telescope.",
+      "Inauguration du Centre Financier de Kinshasa : le Pari Gagnant de Milvest en République Démocratique du Congo ",
     image: "/static/images/home-slider-02.jpg",
-    category: "Deep Space",
+    category: "Annonces",
   },
   {
     id: 3,
-    title: "Europa Mission Update",
+    title: "Avis d'appel à candidature DGTCP (Plusieurs postes)",
     description:
-      "Preparation continues for the upcoming mission to Jupiter's icy moon.",
+      "Avis d'appel à candidature DGTCP (Plusieurs postes) : DGTCP est une entreprise de services financiers en République Démocratique du Congo.",
     image: "/static/images/home-slider-03.jpg",
-    category: "Solar System",
+    category: "Communiqué de presse",
   },
 ];
 
@@ -59,7 +59,7 @@ export default function SectionHero() {
   };
   return (
     <div className="bg-white">
-      <div className="relative w-full h-[60vh] overflow-hidden bg-space-dark">
+      <div className="relative w-full h-[65vh] overflow-hidden bg-space-dark">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -113,14 +113,14 @@ export default function SectionHero() {
           className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
           aria-label="Previous slide"
         >
-          <ArrowCircleLeft className="w-6 h-6" />
+          <ArrowLeft className="w-6 h-6" />
         </button>
         <button
           onClick={nextSlide}
           className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
           aria-label="Next slide"
         >
-          <ArrowCircleRight className="w-6 h-6" />
+          <ArrowRight className="w-6 h-6" />
         </button>
       </div>
       <div className="h-1 flex w-full">
