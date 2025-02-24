@@ -60,7 +60,7 @@ export default function Page() {
             rel="noopener noreferrer"
             className="hover:bg-primary/10 bg-primary text-white rounded-full hover:text-primary inline-flex items-center border p-5 py-3"
           >
-            <span className="font-semibold">Visitez le site web de la DGI</span>
+            <span className="font-medium">Visitez le site web de la DGI</span>
             <ArrowRightCircle className="ml-2 size-4" />
           </a>
         </div>
