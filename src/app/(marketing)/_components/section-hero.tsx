@@ -4,6 +4,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { ArrowRight, ArrowLeft } from "iconsax-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface Slide {
   id: number;
@@ -11,31 +12,35 @@ interface Slide {
   description: string;
   image: string;
   category: string;
+  url: string;
 }
 const slides: Slide[] = [
   {
     id: 1,
     title: "Affectation des agents & cadres",
     description:
-      "Le Ministre Doudou Fwamba Likunde, a effectué une visite d'inspection pour constater la reprise des travaux de Kinshasa Arena après une longue période d'arrêt.",
+      "Mise en œuvre opérationnelle de la politique budgétaire en termes d’exécution des dépenses et de suivi des recettes perçues par les administrations financières",
     image: "/static/images/home-slider-01.jpeg",
     category: "Annonces",
+    url: "#",
   },
   {
     id: 2,
     title: "Inauguration du Centre Financier de Kinshasa",
     description:
-      "Inauguration du Centre Financier de Kinshasa : le Pari Gagnant de Milvest en République Démocratique du Congo ",
+      "Mise en œuvre opérationnelle de la politique budgétaire en termes d’exécution des dépenses et de suivi des recettes perçues par les administrations financières",
     image: "/static/images/home-slider-02.jpg",
     category: "Annonces",
+    url: "#",
   },
   {
     id: 3,
     title: "Avis d'appel à candidature DGTCP (Plusieurs postes)",
     description:
-      "Avis d'appel à candidature DGTCP (Plusieurs postes) : DGTCP est une entreprise de services financiers en République Démocratique du Congo.",
+      "Mise en œuvre opérationnelle de la politique budgétaire en termes d’exécution des dépenses et de suivi des recettes perçues par les administrations financières",
     image: "/static/images/home-slider-03.jpg",
     category: "Communiqué de presse",
+    url: "#",
   },
 ];
 
@@ -108,6 +113,16 @@ export default function SectionHero() {
                 <p className="text-lg md:text-xl text-white max-w-2xl animate-appear">
                   {slide.description}
                 </p>
+
+                <div className="mt-6 flex items-center space-x-2 md:mt-8">
+                  <Link
+                    href={slide.url}
+                    className="text-white inline-flex items-center font-semibold hover:underline md:text-base"
+                  >
+                    <span>Voir plus</span>
+                    <ArrowRight className="ml-2 size-4 transition-transform" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
