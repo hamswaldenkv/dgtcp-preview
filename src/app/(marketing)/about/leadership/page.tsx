@@ -148,30 +148,6 @@ export default function Page() {
                               />
                             </a>
                           </li>
-                          <li>
-                            <a
-                              href="https://www.instagram.com/dgtcp.cd"
-                              target="_blank"
-                            >
-                              <img
-                                src="/static/icons/logo-instagram.svg"
-                                alt=""
-                                className="h-5 text-primary"
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.youtube.com/@dgtcp.cd"
-                              target="_blank"
-                            >
-                              <img
-                                src="/static/icons/logo-youtube.svg"
-                                alt=""
-                                className="h-5 text-primary fill-primary"
-                              />
-                            </a>
-                          </li>
                         </ul>
                       </div>
                     </div>
