@@ -19,11 +19,13 @@ const menuItems = [
     title: "Accueil",
     href: "/",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    subMenuCover: "/static/images/bg-cover-01.jpg",
   },
   {
     title: "L'organisation",
     href: "/about",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    subMenuCover: "/static/images/bg-cover-01.jpg",
     subMenu: [
       {
         title: "Présentation",
@@ -61,6 +63,7 @@ const menuItems = [
     title: "Publications",
     href: "/actualites",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    subMenuCover: "/static/images/home-slider-01.jpeg",
     subMenu: [
       {
         title: "Annonces",
@@ -81,6 +84,41 @@ const menuItems = [
         title: "Evénements",
         href: "/actualites/events",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+    ],
+  },
+  {
+    title: "Partenaires",
+    href: "/partenaires",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    subMenuCover: "/static/images/about-office-03.webp",
+    subMenu: [
+      {
+        title: "DGDEP",
+        href: "/partenaires/dgdep",
+        description: "Direction générale de la dette publique",
+      },
+      {
+        title: "DGRAD",
+        href: "/partenaires/dgrad",
+        description: "La Direction Générale des Recettes Administratives",
+      },
+      {
+        title: "DGI",
+        href: "/partenaires/dgi",
+        description: "Direction Général des Impôts",
+      },
+      {
+        title: "COREF",
+        href: "/partenaires/coref",
+        description:
+          "Comité d'orientation de la réforme des finances publiques.",
+      },
+      {
+        title: "CTR",
+        href: "/partenaires/ctr",
+        description:
+          "Comité technique de suivi et évaluation des réformes Banque centrale",
       },
     ],
   },
@@ -179,7 +217,7 @@ export default function HeaderSection() {
                                 href="/"
                               >
                                 <Image
-                                  src="/static/images/bg-cover-01.jpg"
+                                  src={item.subMenuCover}
                                   alt="alt"
                                   layout="fill"
                                   objectFit="cover"
