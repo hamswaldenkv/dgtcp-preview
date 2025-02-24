@@ -25,25 +25,34 @@ export default function SectionChairman() {
                 </h2>
               </div>
               <p className="mt-1 text-white md:mt-6">
-                Intégré à l'administration publique en 2010, Doudou Fwamba a
-                occupé divers postes au sein du ministère des Finances,
-                notamment en tant que vérificateur de la comptabilité publique,
-                contrôleur des imputations budgétaires et assistant technique du
-                Directeur du Trésor. En 2023, il est promu au grade de Directeur
-                d'Administration Publique
+                Concernant les instruments multilatéraux dans le domaine fiscal,
+                il est important de noter que des fonds importants sont
+                transférés de la République démocratique du Congo vers des
+                juridictions à fiscalité privilégiée ou des paradis fiscaux par
+                des stratégies d'optimisation fiscale employées par les
+                multinationales opérant dans notre pays. Cette optimisation
+                agressive, particulièrement dans les secteurs extractifs qui
+                représentant plus de 70 % de la production minière, empêche
+                notre pays de mobiliser les recettes nécessaires au financement
+                de son programme d'action.
               </p>
               <p className="mt-1 text-white md:mt-6">
-                Le 12 juin 2024, il est nommé ministre des Finances du
-                gouvernement Suminwa, succédant à Nicolas Kazadi. Depuis sa
-                nomination, il a initié plusieurs réformes visant à moderniser
-                les finances publiques et à renforcer la transparence
-                budgétaire. Parmi ses actions notables, on compte la création
-                d'un Compte Unique du Trésor pour centraliser les ressources
-                publiques et la digitalisation des marchés publics. En novembre
-                2024, la RDC a signé un accord avec le Fonds Monétaire
-                International (FMI) pour un Programme Triennal Formel d'une
-                valeur de 1,75 milliard USD, destiné à soutenir les réformes
-                économiques et financières.
+                Pour contrer ce phénomène, la République démocratique du Congo a
+                signé en octobre dernier deux conventions fiscales. La première
+                concerne la lutte contre l'érosion de la base d'imposition et
+                les transferts des bénéfices (BEPS), tandis que la seconde porte
+                sur la règle d'assujettissement à l'impôt. La signature de ces
+                deux instruments s'inscrit dans le cadre de la matérialisation
+                de la vision de Son Excellence Monsieur le Président de la
+                République, Félix-Antoine Tshisekedi Tshilombo, qui a assigné au
+                gouvernement la mission d'améliorer la mobilisation des recettes
+                publiques afin de financer les projets de développement.
+              </p>
+              <p className="mt-1 text-white md:mt-6">
+                Le Président de l'Assemblée nationale et les membres du Bureau
+                saluent cette initiative, qui vise à réduire significativement
+                les pertes de recettes fiscales dues aux transferts de bénéfices
+                vers des juridictions à faible fiscalité
               </p>
               <ul className="mt-10 flex-wrap items-center gap-6 space-y-6 md:flex md:space-y-0 text-white">
                 <li>
