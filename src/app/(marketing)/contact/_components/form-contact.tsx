@@ -22,7 +22,7 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="space-y-2">
         <h2 className="text-2xl font-semibold tracking-tight">
-          Contactez-nous
+          Avez-vous des questions?
         </h2>
         <p className="text-sm text-muted-foreground">
           Remplissez le formulaire ci-dessous et nous vous contacterons dans les
