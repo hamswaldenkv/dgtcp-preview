@@ -117,8 +117,7 @@ const menuItems = [
       {
         title: "CTR",
         href: "/partenaires/ctr",
-        description:
-          "Comité technique de suivi et évaluation des réformes Banque centrale",
+        description: "Comité Technique de suivi et évaluation des Réformes",
       },
     ],
   },
