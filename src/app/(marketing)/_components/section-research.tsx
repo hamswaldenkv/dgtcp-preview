@@ -11,12 +11,8 @@ export default function SectionResearch() {
               À la une
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold text-neutral-800 mb-4">
-              Dernières publications
+              Découvrez les dernières Actualités
             </h2>
-            <p className="text-neutral-600 max-w-2xl mx-auto">
-              EDécouvrez nos derniers articles de recherche, notes d’orientation
-              et analyses sur les questions clés de politique numérique.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

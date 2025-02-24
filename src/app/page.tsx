@@ -2,7 +2,7 @@ import { Card, Facebook } from "iconsax-react";
 import { InstagramLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 
 import { FooterSection } from "@/components/ui/footer-section";
-import HeaderSection from "./(marketing)/_components/header-section";
+import HeaderSection from "./(marketing)/_components/section-header";
 import FeatureSection from "./(marketing)/_components/feature-section";
 import SectionResearch from "./(marketing)/_components/section-research";
 import SectionSubscribe from "./(marketing)/_components/section-subscribe";

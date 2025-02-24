@@ -77,6 +77,11 @@ const menuItems = [
         href: "/actualites/rapports",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
+      {
+        title: "Evénements",
+        href: "/actualites/events",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
     ],
   },
   {

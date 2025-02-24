@@ -1,5 +1,5 @@
 import { FooterSection } from "@/components/ui/footer-section";
-import HeaderSection from "./_components/header-section";
+import HeaderSection from "./_components/section-header";
 import SectionSubscribe from "./_components/section-subscribe";
 import { Card } from "iconsax-react";
 
