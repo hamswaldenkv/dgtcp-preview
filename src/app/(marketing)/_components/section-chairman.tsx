@@ -25,37 +25,59 @@ export default function SectionChairman() {
                 </h2>
               </div>
               <p className="mt-1 text-white md:mt-6">
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Amalesuada
-                cursus porttitor praesent eu nisl posuere est. Penatibus ornare
-                velit porta nostra lacinia suspendisse habitasse lacinia
-                elementum. Aptent ante venenatis in ultricies nullam et
-                adipiscing nullam. Natoque hendrerit ante curae sollicitudin
-                auctor lacus aliquam maecenas curabitur. Et imperdiet curabitur
-                tortor lorem scelerisque natoque ut ante eu? Risus justo varius
-                class interdum non pellentesque.
+                Intégré à l'administration publique en 2010, Doudou Fwamba a
+                occupé divers postes au sein du ministère des Finances,
+                notamment en tant que vérificateur de la comptabilité publique,
+                contrôleur des imputations budgétaires et assistant technique du
+                Directeur du Trésor. En 2023, il est promu au grade de Directeur
+                d'Administration Publique
               </p>
               <p className="mt-1 text-white md:mt-6">
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Amalesuada
-                cursus porttitor praesent eu nisl posuere est. Penatibus ornare
-                velit porta nostra lacinia suspendisse habitasse lacinia
-                elementum. Aptent ante venenatis in ultricies nullam et
-                adipiscing nullam. Natoque hendrerit ante curae sollicitudin
-                auctor lacus aliquam maecenas curabitur. Et imperdiet curabitur
-                tortor lorem scelerisque natoque ut ante eu? Risus justo varius
-                class interdum non pellentesque.
+                Le 12 juin 2024, il est nommé ministre des Finances du
+                gouvernement Suminwa, succédant à Nicolas Kazadi. Depuis sa
+                nomination, il a initié plusieurs réformes visant à moderniser
+                les finances publiques et à renforcer la transparence
+                budgétaire. Parmi ses actions notables, on compte la création
+                d'un Compte Unique du Trésor pour centraliser les ressources
+                publiques et la digitalisation des marchés publics. En novembre
+                2024, la RDC a signé un accord avec le Fonds Monétaire
+                International (FMI) pour un Programme Triennal Formel d'une
+                valeur de 1,75 milliard USD, destiné à soutenir les réformes
+                économiques et financières.
               </p>
               <ul className="mt-10 flex-wrap items-center gap-6 space-y-6 md:flex md:space-y-0 text-white">
-                <li className="flex items-center gap-3">
-                  <Calendar1 className="size-4" />
-                  Agenda
+                <li>
+                  <a
+                    className="flex items-center gap-3"
+                    href="http://finances.gouv.cd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Calendar1 className="size-4" />
+                    Agenda
+                  </a>
                 </li>
-                <li className="flex items-center gap-3">
-                  <MessageText className="size-4" />
-                  Contactez
+                <li>
+                  <a
+                    className="flex items-center gap-3"
+                    href="http://finances.gouv.cd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageText className="size-4" />
+                    Contactez
+                  </a>
                 </li>
-                <li className="flex items-center gap-3">
-                  <LinkedInLogoIcon className="size-4" />
-                  Linkedin
+                <li>
+                  <a
+                    className="flex items-center gap-3"
+                    href="https://linkedin.com/in/doudou-roussel-5b1b1a1b8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LinkedInLogoIcon className="size-4" />
+                    Linkedin
+                  </a>
                 </li>
               </ul>
             </div>
