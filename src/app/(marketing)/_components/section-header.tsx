@@ -55,7 +55,7 @@ const menuItems = [
       {
         title: "Equipe dirigeante",
         href: "/about/leadership",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Decouvrez l'equipe dirigeante de la DGTCP.",
       },
     ],
   },
@@ -68,22 +68,22 @@ const menuItems = [
       {
         title: "Annonces",
         href: "/actualites/annonces",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Decouvrez les annonces de la DGTCP.",
       },
       {
         title: "Communiqué de presse",
         href: "/actualites/presse",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Decouvrez les communiques de presse de la DGTCP.",
       },
       {
         title: "Rapports d'activité",
         href: "/actualites/rapports",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Decouvrez les rapports d'activité de la DGTCP.",
       },
       {
         title: "Evénements",
         href: "/actualites/events",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Decouvrez les événements de la DGTCP.",
       },
     ],
   },
