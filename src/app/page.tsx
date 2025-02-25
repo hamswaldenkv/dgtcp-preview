@@ -4,7 +4,7 @@ import { InstagramLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 import { FooterSection } from "@/components/ui/footer-section";
 import HeaderSection from "./(marketing)/_components/section-header";
 import FeatureSection from "./(marketing)/_components/feature-section";
-import SectionResearch from "./(marketing)/_components/section-research";
+import SectionBlog from "./(marketing)/_components/section-blog";
 import SectionSubscribe from "./(marketing)/_components/section-subscribe";
 import SectionChairman from "./(marketing)/_components/section-chairman";
 import SectionHero from "./(marketing)/_components/section-hero";
@@ -39,7 +39,7 @@ export default function Home() {
           },
         ]}
       />
-      <SectionResearch />
+      <SectionBlog />
       <SectionSubscribe />
       <FooterSection
         logo={<Card className="h-10 w-10" />}
