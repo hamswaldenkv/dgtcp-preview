@@ -32,11 +32,10 @@ export default function Home() {
             photo_url: "/static/images/about-office-02.webp",
           },
           {
-            href: "/about/legal-texts",
-            title: "Textes référentiels",
-            description:
-              "Textes référentiels portant création, missions, organisation et fonctionnement",
-            photo_url: "/static/images/bg-cover-01.jpg",
+            href: "/about/leadership",
+            title: "Equipe directive",
+            description: "Découvrez l'equipe directrice de la DGTCP",
+            photo_url: "/static/images/about-office-03.webp",
           },
         ]}
       />
