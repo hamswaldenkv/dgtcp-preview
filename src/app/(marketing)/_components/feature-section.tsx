@@ -8,64 +8,12 @@ export default function FeatureSection() {
       <section className="py-32 container mx-auto">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col gap-12 md:flex-row">
-            <div
-              className="md:w-7/12 grid grid-cols-2 gap-4"
-              aria-label="layout-grid-equals"
-            >
-              {[
-                {
-                  title: "Note hebdomadaire des opérations du trésor",
-                  description: "",
-                  link: "/actualites/rapports/note-hebdomadaire",
-                },
-                {
-                  title: "Note Mensuelle des opérations du trésor",
-                  description: "",
-                  link: "/actualites/rapports/note-mensuelle",
-                },
-                {
-                  title: "Revenue mensuelle des opérations du trésor",
-                  description: "",
-                  link: "/actualites/rapports/revenue-mensuelle",
-                },
-                {
-                  title: "Rapport du réseau national des comptables",
-                  description: "",
-                  link: "/actualites/rapports/rapport-du-reseau-national-des-comptables",
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-slate-200 h-[24rem] rounded flex flex-col items-center p-4 animate-appear"
-                >
-                  <div className="flex-1 border border-slate-400 flex flex-col items-center p-6 space-y-4">
-                    <div className="flex-1 flex flex-col items-center space-y-4">
-                      <ClipboardText
-                        className="size-8 text-primary"
-                        variant="Bulk"
-                      />
-                      <h1 className="text-2xl text-center uppercase font-bold">
-                        {item.title}
-                      </h1>
-                      <p className="text-sm text-center">{item.description}</p>
-                    </div>
-                    <Link
-                      href={item.link}
-                      className="inline-flex items-center font-semibold hover:underline md:text-base"
-                    >
-                      <span>Accéder</span>
-                      <ArrowRight className="ml-2 size-4 transition-transform" />
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
             <div className="md:w-5/12 lg:p-10">
               <h2 className="text-balance text-3xl font-medium md:text-5xl text-black">
                 Rapports d'activité de la DGTCP
               </h2>
               <p className="mt-1 text-black md:mt-6">
-                Accédez ou téléchargez les rapports d'activité de la DGTCP
+                Accédez ou téléchargez les rapports ainsi que les notes mensuellles d'activité de la DGTCP
               </p>
               <Link
                 href="/actualites/rapports"
@@ -161,6 +109,58 @@ export default function FeatureSection() {
                   Fast
                 </li>
               </ul> */}
+            </div>
+            <div
+              className="md:w-7/12 grid grid-cols-2 gap-4"
+              aria-label="layout-grid-equals"
+            >
+              {[
+                {
+                  title: "Note hebdomadaire des opérations du trésor",
+                  description: "",
+                  link: "/actualites/rapports/note-hebdomadaire",
+                },
+                {
+                  title: "Note Mensuelle des opérations du trésor",
+                  description: "",
+                  link: "/actualites/rapports/note-mensuelle",
+                },
+                {
+                  title: "Revenue mensuelle des opérations du trésor",
+                  description: "",
+                  link: "/actualites/rapports/revenue-mensuelle",
+                },
+                {
+                  title: "Rapport du réseau national des comptables",
+                  description: "",
+                  link: "/actualites/rapports/rapport-du-reseau-national-des-comptables",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-slate-200 h-[24rem] rounded flex flex-col items-center p-4 animate-appear"
+                >
+                  <div className="flex-1 border border-slate-400 flex flex-col items-center p-6 space-y-4">
+                    <div className="flex-1 flex flex-col items-center space-y-4">
+                      <ClipboardText
+                        className="size-8 text-primary"
+                        variant="Bulk"
+                      />
+                      <h1 className="text-2xl text-center uppercase font-bold">
+                        {item.title}
+                      </h1>
+                      <p className="text-sm text-center">{item.description}</p>
+                    </div>
+                    <Link
+                      href={item.link}
+                      className="inline-flex items-center font-semibold hover:underline md:text-base"
+                    >
+                      <span>Accéder</span>
+                      <ArrowRight className="ml-2 size-4 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
