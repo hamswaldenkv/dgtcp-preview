@@ -3,7 +3,7 @@ import { InstagramLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 
 import { FooterSection } from "@/components/ui/footer-section";
 import HeaderSection from "./(marketing)/_components/section-header";
-import FeatureSection from "./(marketing)/_components/feature-section";
+import FeatureSection from "./(marketing)/_components/section-feature";
 import SectionBlog from "./(marketing)/_components/section-blog";
 import SectionSubscribe from "./(marketing)/_components/section-subscribe";
 import SectionChairman from "./(marketing)/_components/section-chairman";
