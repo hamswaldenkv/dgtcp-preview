@@ -255,9 +255,9 @@ export default function HeaderSection() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+
+          {/** <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <ul className="ml-10 flex space-x-2">
-              {" "}
               <li className="lang-item lang-item-4 lang-item-fr current-lang lang-item-first">
                 <a lang="fr-FR" hrefLang="fr-FR" href="https://www.dgtcp.cd/">
                   <img
@@ -285,7 +285,7 @@ export default function HeaderSection() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="py-5 border-b flex justify-center">
             <a
