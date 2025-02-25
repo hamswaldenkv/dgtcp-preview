@@ -8,6 +8,7 @@ import SectionResearch from "./(marketing)/_components/section-research";
 import SectionSubscribe from "./(marketing)/_components/section-subscribe";
 import SectionChairman from "./(marketing)/_components/section-chairman";
 import SectionHero from "./(marketing)/_components/section-hero";
+import SectionRelated from "./(marketing)/_components/section-related";
 
 export default function Home() {
   return (
@@ -16,6 +17,29 @@ export default function Home() {
       <SectionHero />
       <SectionChairman />
       <FeatureSection />
+      <SectionRelated
+        links={[
+          {
+            href: "/about/attributions",
+            title: "Attributions",
+            description: "Attributions de la DGTCP",
+            photo_url: "/static/images/about-office-01.webp",
+          },
+          {
+            href: "/about/missions",
+            title: "Missions",
+            description: "Missions de la DGTCP",
+            photo_url: "/static/images/about-office-02.webp",
+          },
+          {
+            href: "/about/legal-texts",
+            title: "Textes référentiels",
+            description:
+              "Textes référentiels portant création, missions, organisation et fonctionnement",
+            photo_url: "/static/images/bg-cover-01.jpg",
+          },
+        ]}
+      />
       <SectionResearch />
       <SectionSubscribe />
       <FooterSection
