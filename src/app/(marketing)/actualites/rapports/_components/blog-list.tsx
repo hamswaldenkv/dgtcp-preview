@@ -21,7 +21,7 @@ interface BlogListProps {
 }
 
 const BlogList = ({
-  heading = "Evénements publiés",
+  heading = "Rapports d'activité",
   description = "Decouvrez nos derniers événements publiés",
   posts = [
     {
@@ -62,7 +62,7 @@ const BlogList = ({
           </p>
         </div>
 
-        <div className="border border-border/50 divide-y divide-border p-10">
+        <div className="border border-border divide-y divide-border p-10">
           {posts.map((post) => (
             <Card
               key={post.id}
