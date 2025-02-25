@@ -157,7 +157,7 @@ export default function HeaderSection() {
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center md:justify-start md:space-x-10 py-1">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex justify-start">
             <a href="/">
               {/** <img
                 src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
@@ -171,7 +171,7 @@ export default function HeaderSection() {
               />
             </a>
           </div>
-          <div className="-mr-2 -my-2 md:hidden">
+          {/** <div className="-mr-2 -my-2 md:hidden">
             <button
               className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500"
               id="headlessui-popover-button-2"
@@ -195,8 +195,8 @@ export default function HeaderSection() {
                 />
               </svg>
             </button>
-          </div>
-          <NavigationMenu className="z-[9999]">
+          </div> */}
+          <NavigationMenu className="z-[9999] flex-1">
             <NavigationMenuList>
               {menuItems.map((item, index) => (
                 <NavigationMenuItem key={index}>
