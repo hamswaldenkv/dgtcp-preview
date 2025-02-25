@@ -53,22 +53,30 @@ export function FooterSection({
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary2" href="/about/history">
+                <Link
+                  className="hover:text-primary2"
+                  href="/about/leaderboard-map"
+                >
                   <span className="text-sm font-medium">Organisation</span>
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary2" href="/actualites">
-                  <span className="text-sm font-medium">Actualités</span>
+                <Link
+                  className="hover:text-primary2"
+                  href="/actualites/annonces"
+                >
+                  <span className="text-sm font-medium">Annonces</span>
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary2" href="/about/history">
-                  <span className="text-sm font-medium">Documents</span>
+                <Link className="hover:text-primary2" href="/actualites/presse">
+                  <span className="text-sm font-medium">
+                    Communiqué de presse
+                  </span>
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary2" href="/">
+                <Link className="hover:text-primary2" href="/contact">
                   <span className="text-sm font-medium">Contact</span>
                 </Link>
               </li>
