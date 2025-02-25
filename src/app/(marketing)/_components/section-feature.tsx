@@ -13,7 +13,8 @@ export default function FeatureSection() {
                 Rapports d'activité de la DGTCP
               </h2>
               <p className="mt-1 text-black md:mt-6">
-                Accédez ou téléchargez les rapports ainsi que les notes mensuellles d'activité de la DGTCP
+                Accédez ou téléchargez les rapports ainsi que les notes
+                mensuellles d'activité de la DGTCP
               </p>
               <Link
                 href="/actualites/rapports"
@@ -118,22 +119,22 @@ export default function FeatureSection() {
                 {
                   title: "Note hebdomadaire des opérations du trésor",
                   description: "",
-                  link: "/actualites/rapports/note-hebdomadaire",
+                  link: "/actualites/rapports",
                 },
                 {
                   title: "Note Mensuelle des opérations du trésor",
                   description: "",
-                  link: "/actualites/rapports/note-mensuelle",
+                  link: "/actualites/rapports",
                 },
                 {
                   title: "Revenue mensuelle des opérations du trésor",
                   description: "",
-                  link: "/actualites/rapports/revenue-mensuelle",
+                  link: "/actualites/rapports",
                 },
                 {
                   title: "Rapport du réseau national des comptables",
                   description: "",
-                  link: "/actualites/rapports/rapport-du-reseau-national-des-comptables",
+                  link: "/actualites/rapports",
                 },
               ].map((item, index) => (
                 <div
