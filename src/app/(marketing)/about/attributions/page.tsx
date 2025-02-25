@@ -1,13 +1,28 @@
 import { Separator } from "@/components/ui/separator";
 import SectionHeading from "../../_components/section-heading";
+import Image from "next/image";
 
 export default function Page() {
   return (
     <div className="min-h-[50vh] bg-white space-y-10">
       <SectionHeading title="Attributions de la DGTCP" />
 
+      <div className="container mx-auto gap-10">
+        <h1 className="text-4xl font-bold">
+          Les attributions de la Direction Générale du Trésor et de la
+          Comptabilité Publique sur base du décret n° 22/ 12B du 31 mars 2022
+        </h1>
+      </div>
+
       <div className="container mx-auto flex gap-10">
-        <div className="h-[40rem] w-1/3 bg-slate-100"></div>
+        <div className="h-[40rem] w-1/3 bg-slate-100 relative">
+          <Image
+            src="/static/images/about-office-03.webp"
+            alt="alt"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Direction générale</h1>
           <p>
@@ -46,7 +61,14 @@ export default function Page() {
       <Separator />
 
       <div className="container mx-auto flex gap-10">
-        <div className="h-[25rem] w-1/3 bg-slate-100"></div>
+        <div className="h-[25rem] w-1/3 bg-slate-100 relative">
+          <Image
+            src="/static/images/about-office-01.webp"
+            alt="alt"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Directeurs généraux Adjoints</h1>
 
@@ -72,7 +94,14 @@ export default function Page() {
       <Separator />
 
       <div className="container mx-auto flex gap-10">
-        <div className="h-[25rem] w-1/3 bg-slate-100"></div>
+        <div className="h-[25rem] w-1/3 bg-slate-100 relative">
+          <Image
+            src="/static/images/about-office-04.webp"
+            alt="alt"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">
             Secrétariats administratif et technique de la Direction générale
@@ -113,7 +142,14 @@ export default function Page() {
       <Separator />
 
       <div className="container mx-auto flex gap-10">
-        <div className="h-[25rem] w-1/3 bg-slate-100"></div>
+        <div className="h-[25rem] w-1/3 bg-slate-100 relative">
+          <Image
+            src="/static/images/about-office-05.webp"
+            alt="alt"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Secrétariat technique</h1>
 
@@ -143,7 +179,14 @@ export default function Page() {
       <Separator />
 
       <div className="container mx-auto flex gap-10">
-        <div className="h-[25rem] w-1/3 bg-slate-100"></div>
+        <div className="h-[25rem] w-1/3 bg-slate-100 relative">
+          <Image
+            src="/static/images/about-office-02.webp"
+            alt="alt"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Directions</h1>
 
@@ -158,7 +201,14 @@ export default function Page() {
       <Separator />
 
       <div className="container mx-auto flex gap-10">
-        <div className="h-[25rem] w-1/3 bg-slate-100"></div>
+        <div className="h-[25rem] w-1/3 bg-slate-100 relative">
+          <Image
+            src="/static/images/about-person-03.jpeg"
+            alt="alt"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Comptables du trésor</h1>
 
