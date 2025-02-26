@@ -127,12 +127,12 @@ export default function FeatureSection() {
                   link: "/actualites/rapports",
                 },
                 {
-                  title: "Revenue mensuelle des opérations du trésor",
+                  title: "Revue mensuelle des opérations du trésor",
                   description: "",
                   link: "/actualites/rapports",
                 },
                 {
-                  title: "Rapport du réseau national des comptables",
+                  title: "Rapport d'inspection des opérations du trésor",
                   description: "",
                   link: "/actualites/rapports",
                 },
