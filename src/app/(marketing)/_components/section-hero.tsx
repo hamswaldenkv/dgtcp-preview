@@ -85,7 +85,7 @@ export default function SectionHero() {
 
   return (
     <div className="bg-white">
-      <div className="relative h-[65vh] overflow-hidden bg-space-dark">
+      <div className="relative h-[50vh] overflow-hidden bg-space-dark">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
