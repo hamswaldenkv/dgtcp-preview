@@ -94,7 +94,9 @@ export default function SectionHero() {
               index === currentSlide ? "opacity-100" : "opacity-0"
             )}
           >
+            {/** 
             <div className="absolute inset-0 bg-black/40 z-10" />
+             */}
             <Image
               src={slide.image}
               alt={slide.title}
