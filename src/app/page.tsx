@@ -9,12 +9,14 @@ import SectionSubscribe from "./(marketing)/_components/section-subscribe";
 import SectionChairman from "./(marketing)/_components/section-chairman";
 import SectionHero from "./(marketing)/_components/section-hero";
 import SectionRelated from "./(marketing)/_components/section-related";
+import SectionMainText from "./(marketing)/_components/section-maintext";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <HeaderSection />
       <SectionHero />
+      <SectionMainText />
       <SectionChairman />
       <FeatureSection />
       <SectionRelated
