@@ -85,7 +85,7 @@ export default function SectionHero() {
 
   return (
     <div className="bg-white">
-      <div className="relative w-full h-[65vh] overflow-hidden bg-space-dark">
+      <div className="relative h-[65vh] overflow-hidden bg-space-dark">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -102,15 +102,15 @@ export default function SectionHero() {
               objectFit="cover"
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-0 left-0 right-0 z-20 p-8 pb-20 bg-gradient-to-t from-black/80 to-transparent">
-              <div className="container mx-auto">
-                <span className="inline-block px-3 py-1 mb-4 text-sm font-medium text-white bg-primary rounded-full">
+            <div className="absolute bottom-0 left-0 right-0 z-20 p-8 pb-20">
+              <div className="container mx-auto bg-black/50 p-10 flex flex-col items-center">
+                <span className="inline-block px-3 py-1 mb-4 text-sm font-medium text-white bg-primary rounded-full text-center">
                   {slide.category}
                 </span>
-                <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight animate-appear">
+                <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight animate-appear text-center">
                   {slide.title}
                 </h2>
-                <p className="text-lg md:text-xl text-white max-w-2xl animate-appear">
+                <p className="text-lg md:text-xl text-white max-w-2xl animate-appear text-center hidden">
                   {slide.description}
                 </p>
 
