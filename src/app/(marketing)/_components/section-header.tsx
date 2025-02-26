@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
@@ -12,7 +13,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 const menuItems = [
   {
@@ -41,6 +41,11 @@ const menuItems = [
         title: "Missions",
         href: "/about/missions",
         description: "Decouvrez les missions de la DGTCP.",
+      },
+      {
+        title: "Reformes",
+        href: "/about/reformes",
+        description: "Decouvrez les reformes de la DGTCP.",
       },
       {
         title: "Textes référentiels",
@@ -143,11 +148,7 @@ export default function HeaderSection() {
   return (
     <div className="relative bg-white border-b">
       <div className="py-5 border-b hidden justify-center">
-        <a
-          target="_blank"
-          href="https://finances.gouv.cd/"
-          rel="noopener noreferrer"
-        >
+        <a href="/" rel="noopener noreferrer">
           <img
             src="/static/images/logo-main-square.jpeg"
             className="h-20"
@@ -159,14 +160,9 @@ export default function HeaderSection() {
         <div className="flex justify-between items-center md:justify-start md:space-x-10 py-1">
           <div className="flex justify-start">
             <a href="/">
-              {/** <img
-                src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
-                className="h-20"
-                alt="DCGTP"
-              /> */}
               <img
                 src="/static/images/logo-main-nav.jpeg"
-                className="h-16"
+                className="h-20"
                 alt="DCGTP"
               />
             </a>
@@ -295,7 +291,7 @@ export default function HeaderSection() {
             >
               <img
                 src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
-                className="h-12"
+                className="h-20"
                 alt="Ministère des finances"
               />
             </a>
