@@ -60,7 +60,7 @@ export default function Page() {
             href: "/about/missions",
             title: "Missions",
             description: "Missions de la DGTCP",
-            photo_url: "/static/images/about-office-02.webp",
+            photo_url: "/static/images/gallery-photo-01.jpeg",
           },
           {
             href: "/about/legal-texts",

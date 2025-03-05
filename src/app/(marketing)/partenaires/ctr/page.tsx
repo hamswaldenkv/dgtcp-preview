@@ -11,7 +11,7 @@ export default function Page() {
       <div className="container mx-auto flex gap-10">
         <div className="h-[40rem] w-1/3 bg-slate-100 relative">
           <Image
-            src="/static/images/about-office-01.webp"
+            src="/static/images/partenaire-ctr.jpeg"
             alt="alt"
             layout="fill"
             objectFit="cover"
