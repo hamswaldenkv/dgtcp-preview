@@ -105,7 +105,7 @@ export default function SectionHero() {
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 z-20 p-8 pb-20">
-              <div className="container mx-auto bg-black/25 p-10 flex flex-col items-center">
+              <div className="container mx-auto bg-black/15 p-10 flex flex-col items-center">
                 <span className="inline-block px-3 py-1 mb-4 text-sm font-medium text-white bg-primary rounded-full text-center">
                   {slide.category}
                 </span>
