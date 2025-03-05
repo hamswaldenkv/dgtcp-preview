@@ -7,7 +7,7 @@ export default function Page() {
     <div className="min-h-[50vh] bg-white space-y-10">
       <SectionHeading title="Missions de la DGTCP" />
 
-      <div className="container mx-auto flex gap-10">
+      <div className="container mx-auto flex gap-10 py-16">
         <div className="h-[30rem] w-[40%] bg-slate-100 relative">
           <Image
             src="/static/images/gallery-photo-02.jpeg"
@@ -45,8 +45,6 @@ export default function Page() {
           </ul>
         </div>
       </div>
-
-      <div className="h-10"></div>
     </div>
   );
 }
