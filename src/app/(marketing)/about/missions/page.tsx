@@ -8,9 +8,9 @@ export default function Page() {
       <SectionHeading title="Missions de la DGTCP" />
 
       <div className="container mx-auto flex gap-10">
-        <div className="h-[30rem] w-1/3 bg-slate-100 relative">
+        <div className="h-[30rem] w-[40%] bg-slate-100 relative">
           <Image
-            src="/static/images/about-office-01.webp"
+            src="/static/images/gallery-photo-02.jpeg"
             alt="alt"
             layout="fill"
             objectFit="cover"
