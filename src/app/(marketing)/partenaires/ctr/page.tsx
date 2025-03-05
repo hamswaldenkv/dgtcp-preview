@@ -19,7 +19,7 @@ export default function Page() {
         </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Présentation</h1>
-          <p className="text-base">
+          <p className="text-base text-justify">
             Le Comité Technique de Suivi et Évaluation des Réformes (CTR) de la
             République Démocratique du Congo (RDC) est une structure dédiée au
             suivi et à l’évaluation des réformes mises en œuvre dans divers
@@ -31,7 +31,7 @@ export default function Page() {
             obstacles rencontrés dans l'application des réformes et de proposer
             des solutions pour améliorer leur efficacité.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             Le CTR est composé de représentants des institutions publiques,
             d'experts techniques, ainsi que de partenaires au développement, et
             il travaille en étroite collaboration avec les différentes parties
@@ -42,7 +42,7 @@ export default function Page() {
             s'assure que les réformes respectent les principes de transparence,
             de bonne gouvernance et de responsabilité.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             Le CTR joue un rôle clé dans la production de rapports de suivi qui
             servent de base à des ajustements éventuels des politiques
             publiques. En identifiant les points forts et les domaines

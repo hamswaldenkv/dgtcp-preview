@@ -19,7 +19,7 @@ export default function Page() {
         </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Présentation</h1>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La Direction Générale des Impôts (DGI) de la République Démocratique
             du Congo (RDC) est l'entité responsable de la collecte des impôts et
             des recettes fiscales au niveau national. Elle est placée sous
@@ -30,7 +30,7 @@ export default function Page() {
             sources de revenus de l'État, en s'assurant que chaque citoyen et
             entreprise paie sa juste part.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La DGI joue un rôle crucial dans la politique fiscale du pays,
             notamment à travers l'amélioration de l'assiette fiscale, la lutte
             contre la fraude et l'évasion fiscales, et la modernisation des
@@ -41,7 +41,7 @@ export default function Page() {
             mise en œuvre de nouvelles technologies pour la gestion des données
             fiscales font partie des priorités de la DGI.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La DGI œuvre pour la promotion de la culture fiscale au sein de la
             population congolaise. Cela inclut la sensibilisation des
             contribuables, le renforcement des capacités des agents de l'État,

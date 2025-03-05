@@ -19,7 +19,7 @@ export default function Page() {
         </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Présentation</h1>
-          <p className="text-base">
+          <p className="text-base text-justify">
             Le Comité d'Orientation de la Réforme des Finances Publiques (COREF)
             de la République Démocratique du Congo (RDC) est un organisme
             consultatif et stratégique chargé de superviser et de coordonner les
@@ -31,7 +31,7 @@ export default function Page() {
             économique du pays, en favorisant une gestion rigoureuse des
             ressources publiques.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             Le COREF a pour mission d'identifier les priorités de réforme en
             matière de gestion budgétaire, de contrôle des dépenses publiques,
             de mobilisation des recettes et de gestion de la dette. Il propose
@@ -42,7 +42,7 @@ export default function Page() {
             et internationales pour mettre en place des réformes adaptées aux
             défis économiques de la RDC.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             Le COREF joue également un rôle de coordination entre les différents
             acteurs impliqués dans la réforme des finances publiques, tels que
             les ministères concernés, les bailleurs de fonds, et les partenaires

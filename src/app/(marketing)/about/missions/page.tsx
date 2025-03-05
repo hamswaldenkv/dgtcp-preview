@@ -18,7 +18,7 @@ export default function Page() {
         </div>
         <div className="flex-1 space-y-5">
           <h1 className="text-4xl font-bold">Mission principale</h1>
-          <p>
+          <p className="text-base text-justify">
             La mise en œuvre opérationnelle de la politique budgétaire au plan
             de l’exécution des dépenses dans leur phase comptable et du suivi
             des recettes recouvrées par les administrations financières ;

@@ -19,7 +19,7 @@ export default function Page() {
         </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Présentation</h1>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La Direction Générale des Recettes Administratives, Judiciaires,
             Domaniales et de Participations (DGRAD) de la République
             Démocratique du Congo (RDC) est l'entité publique responsable de la
@@ -32,7 +32,7 @@ export default function Page() {
             types de recettes spécifiques. La DGRAD a pour objectif de maximiser
             ces recettes afin de contribuer au financement du budget de l'État.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La mission de la DGRAD inclut également la gestion des patrimoines
             de l'État et des droits de propriété des institutions publiques.
             Cela englobe les opérations liées à la vente ou à la gestion des
@@ -42,7 +42,7 @@ export default function Page() {
             l'État, en garantissant la transparence et l'efficacité des
             processus liés à la gestion de ces biens.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La DGRAD œuvre à l'amélioration du système de collecte et à la lutte
             contre la fraude et les détournements, en renforçant les contrôles
             et la transparence dans la gestion des recettes non fiscales. Elle

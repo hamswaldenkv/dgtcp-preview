@@ -19,7 +19,7 @@ export default function Page() {
         </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Présentation</h1>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La Direction Générale des Douanes et Accises (DGDA) en République
             Démocratique du Congo (RDC) est l'institution responsable de la
             gestion et du contrôle des importations et des exportations de
@@ -30,7 +30,7 @@ export default function Page() {
             assure la sécurité des frontières commerciales en collaborant avec
             d'autres agences gouvernementales et internationales.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             Les missions principales de la DGDA incluent la gestion des recettes
             douanières, l'application des politiques fiscales et commerciales du
             gouvernement, ainsi que la facilitation des échanges commerciaux
@@ -42,7 +42,7 @@ export default function Page() {
             et la contrebande, tout en promouvant une meilleure transparence et
             efficacité dans ses services.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             En tant qu'institution stratégique, la DGDA a aussi pour mission
             d'accompagner les opérateurs économiques dans la formalisation de
             leurs activités commerciales. Elle met en place des mécanismes

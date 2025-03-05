@@ -18,7 +18,7 @@ export default function Page() {
         </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">À propos de la DGTCP</h1>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La Direction Générale du Trésor et de la Comptabilité Publique
             (DGTCP) de la République Démocratique du Congo (RDC) est une
             institution essentielle au bon fonctionnement des finances
@@ -29,7 +29,7 @@ export default function Page() {
             assurant la bonne exécution des politiques économiques et
             budgétaires du pays.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La DGTCP est responsable de l'élaboration et de la mise en œuvre des
             stratégies fiscales, de la gestion de la trésorerie de l'État, de la
             supervision de la comptabilité publique et de la gestion des dettes
@@ -38,7 +38,7 @@ export default function Page() {
             publics et à la mise en œuvre de mesures visant à renforcer la
             gouvernance financière.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             Dans ses efforts pour moderniser et rationaliser la gestion des
             finances publiques, la Direction travaille en étroite collaboration
             avec d’autres entités publiques et privées, et met en place des
@@ -65,7 +65,8 @@ export default function Page() {
           {
             href: "/about/legal-texts",
             title: "Textes référentiels",
-            description: "Textes référentiels portant création, missions, organisation et fonctionnement",
+            description:
+              "Textes référentiels portant création, missions, organisation et fonctionnement",
             photo_url: "/static/images/bg-cover-01.jpg",
           },
         ]}

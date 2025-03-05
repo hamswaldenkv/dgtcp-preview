@@ -19,7 +19,7 @@ export default function Page() {
         </div>
         <div className="flex-1 p-10 space-y-5">
           <h1 className="text-4xl font-bold">Présentation</h1>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La Direction Générale de la Dette Publique (DGDP) de la République
             Démocratique du Congo (RDC) est l'institution chargée de la gestion,
             du suivi et du contrôle de l'ensemble des emprunts contractés par
@@ -30,7 +30,7 @@ export default function Page() {
             manière prudente et transparente, en évitant un endettement excessif
             ou incontrôlé.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La DGDP joue un rôle stratégique en matière de négociation de la
             dette, notamment lors de la restructuration de certaines créances ou
             de la recherche de nouvelles sources de financement. Elle est
@@ -40,7 +40,7 @@ export default function Page() {
             compte les risques associés aux fluctuations des taux d'intérêt, des
             devises et d'autres facteurs économiques.
           </p>
-          <p className="text-base">
+          <p className="text-base text-justify">
             La DGDP a pour mission de promouvoir la transparence et la bonne
             gouvernance dans la gestion de la dette publique en RDC. Elle met en
             œuvre des mécanismes de suivi régulier de l’évolution de la dette et
