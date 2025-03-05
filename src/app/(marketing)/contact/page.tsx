@@ -40,10 +40,10 @@ export default function Page() {
                   className="p-6 hover:shadow-lg transition-shadow duration-300"
                 >
                   <div className="space-y-4">
-                    <div className="flex items-center space-x-2">
-                      <Map className="h-5 w-5 text-primary" />
+                    <div className="flex space-x-2">
+                      <Map className="size-6 text-primary" />
                       <div>
-                        <h3 className="font-medium">{location.city}</h3>
+                        <h3 className="font-medium text-xl">{location.city}</h3>
                         <p className="text-sm text-muted-foreground">
                           {location.address}
                         </p>
