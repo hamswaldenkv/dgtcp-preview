@@ -11,7 +11,7 @@ export default function Page() {
         <img
           src="/static/images/about-organigramme.png"
           alt="Organigramme"
-          className="w-full h-[55rem] object-cover"
+          className="w-full h-[45rem] object-cover"
         />
       </div>
     </div>
