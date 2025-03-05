@@ -1,5 +1,4 @@
-import { ArrowRightCircle, MailIcon } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
+import { MailIcon } from "lucide-react";
 import SectionHeading from "../_components/section-heading";
 import { Card } from "@/components/ui/card";
 import { Call, Map } from "iconsax-react";
@@ -8,21 +7,9 @@ import ContactForm from "./_components/form-contact";
 const locations = [
   {
     city: "Kinshasa",
-    address: "123 Broadway St, NY 10013",
-    phone: "+243 810 000 111",
-    email: "kinshasa@dgtcp.cd",
-  },
-  {
-    city: "Matadi",
-    address: "456 Oxford St, London W1C 1AP",
-    phone: "+243 810 000 111",
-    email: "matadi@dgtcp.cd",
-  },
-  {
-    city: "Lubumbashi",
-    address: "789 Shibuya, Tokyo 150-0002",
-    phone: "+243 810 000 111",
-    email: "lubumbashi@dgtcp.cd",
+    address: "14, Avenue Sergent Moke, Concession Safricas",
+    phone: "+243 819 387 049",
+    email: "secretariat-dg@dgtcp.cd",
   },
 ];
 

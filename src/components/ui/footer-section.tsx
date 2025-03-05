@@ -157,7 +157,7 @@ export function FooterSection({
         <div className="justify-center md:justify-start hidden xl:inline">
           <h1 className="font-bold font-hkgrotesk">Notre adresse</h1>
           <div>
-            <span className="text-sm">14, Avenue Sergent Mokee</span>
+            <span className="text-sm">14, Avenue Sergent Moke</span>
           </div>
           <div>
             <span className="text-sm">Concession Safricas</span>
