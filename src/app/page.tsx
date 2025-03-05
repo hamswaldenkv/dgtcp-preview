@@ -22,22 +22,22 @@ export default function Home() {
       <SectionRelated
         links={[
           {
-            href: "/about/attributions",
-            title: "Attributions",
-            description: "Attributions de la DGTCP",
-            photo_url: "/static/images/about-office-01.webp",
-          },
-          {
             href: "/about/missions",
             title: "Missions",
             description: "Missions de la DGTCP",
-            photo_url: "/static/images/about-office-02.webp",
+            photo_url: "/static/images/gallery-photo-03.jpeg",
+          },
+          {
+            href: "/about/attributions",
+            title: "Attributions",
+            description: "Attributions de la DGTCP",
+            photo_url: "/static/images/gallery-photo-02.jpeg",
           },
           {
             href: "/about/leadership",
             title: "Equipe directive",
             description: "Découvrez l'equipe directrice de la DGTCP",
-            photo_url: "/static/images/about-office-03.webp",
+            photo_url: "/static/images/about-office-01.webp",
           },
         ]}
       />

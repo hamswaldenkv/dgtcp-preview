@@ -25,21 +25,21 @@ export default function SectionBlog() {
                 category: "Annonce",
                 date: "Decembre 2024",
                 link: "#",
-                image: "/static/images/about-person-03.jpeg",
+                image: "/static/images/gallery-photo-01.jpeg",
               },
               {
                 title: "Inauguration du Centre Financier de Kinshasa",
                 category: "Presse",
                 date: "Janvier 2025",
                 link: "#",
-                image: "/static/images/bg-cover-01.jpg",
+                image: "/static/images/gallery-photo-01.jpeg",
               },
               {
                 title: "Avis d'appel à candidature DGTCP (Plusieurs postes)",
                 category: "Presse",
                 date: "Fevrier 2025",
                 link: "#",
-                image: "/static/images/about-person-04.webp",
+                image: "/static/images/gallery-photo-01.jpeg",
               },
             ].map((item, index) => (
               <div
