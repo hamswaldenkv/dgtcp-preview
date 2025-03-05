@@ -100,9 +100,14 @@ const menuItems = [
     subMenuCover: "/static/images/about-office-03.webp",
     subMenu: [
       {
-        title: "DGDEP",
-        href: "/partenaires/dgdep",
+        title: "DGDP",
+        href: "/partenaires/dgdp",
         description: "Direction générale de la dette publique",
+      },
+      {
+        title: "DGDA",
+        href: "/partenaires/dgda",
+        description: "Direction générale des douanes et accises",
       },
       {
         title: "DGRAD",
