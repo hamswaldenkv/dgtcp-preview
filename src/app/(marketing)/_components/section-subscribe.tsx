@@ -7,7 +7,7 @@ import React from "react";
 export default function SectionSubscribe() {
   return (
     <div className="flex md:flex-row flex-col bg-[#f4f4f4]">
-      <div className="w-full md:w-1/2 md:h-[500px] h-[200px] relative">
+      <div className="hidden md:flex w-full md:w-1/2 md:h-[500px] h-[200px] relative">
         <Image
           src="/static/images/bg-cover-01.jpg"
           alt="alt"
@@ -22,7 +22,7 @@ export default function SectionSubscribe() {
           <div className="flex-1 h-full bg-yellow-500" />
         </div>
 
-        <div className="max-w-2xl mx-auto space-y-3 flex-1 flex flex-col justify-center">
+        <div className="max-w-[70%] py-12 md:py-0 md:max-w-2xl mx-auto space-y-3 flex-1 flex flex-col justify-center">
           <h1 className="uppercase font-bold text-gray-500 text-xl">
             Restez avec nous
           </h1>
@@ -76,24 +76,6 @@ export default function SectionSubscribe() {
                     src="/static/icons/logo-linkedin.svg"
                     alt=""
                     className="h-6 text-blue-500"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/dgtcp.cd" target="_blank">
-                  <img
-                    src="/static/icons/logo-instagram.svg"
-                    alt=""
-                    className="h-6 text-primary"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@dgtcp.cd" target="_blank">
-                  <img
-                    src="/static/icons/logo-youtube.svg"
-                    alt=""
-                    className="h-6 text-primary"
                   />
                 </a>
               </li>
