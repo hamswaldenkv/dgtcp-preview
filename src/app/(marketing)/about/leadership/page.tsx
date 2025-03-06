@@ -4,6 +4,7 @@ import SeeMoreText from "@/components/ui/see-more-text";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import SectionHeading from "../../_components/section-heading";
 
 const sections = [
   {
@@ -129,9 +130,8 @@ const sections = [
 export default function Page() {
   return (
     <div className="min-h-[50vh] bg-slate-300/10">
-      <div className="container mx-auto space-y-5 py-20">
-        <h1 className="text-4xl font-bold mb-4">Leadership</h1>
-
+      <SectionHeading title="Equipe dirigeante" />
+      <div className="max-w-[90%] md:container mx-auto space-y-5 py-20">
         <div className="space-y-14">
           {sections.map((section, index) => (
             <div key={index} className="space-y-5">
@@ -148,7 +148,7 @@ export default function Page() {
                 {section.members.map((member, memberIndex) => (
                   <div
                     key={memberIndex}
-                    className="shadow-sm p-5 bg-white flex gap-5"
+                    className="shadow-sm p-5 bg-white flex flex-col md:flex-row gap-5"
                   >
                     <div className="h-[20rem] w-[15rem] bg-slate-400 relative">
                       <Image
