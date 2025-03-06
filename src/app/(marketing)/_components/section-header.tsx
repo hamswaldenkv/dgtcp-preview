@@ -204,127 +204,123 @@ export default function HeaderSection() {
           </ul>
         </div>
 
-        <DesktopView>
-          <div className="px-4 sm:px-6">
-            <div className="flex justify-between items-center md:justify-start md:space-x-10 py-1">
-              <div className="flex justify-start">
-                <a href="/">
-                  <img
-                    src="/static/images/logo-main-nav.jpeg"
-                    className="h-20"
-                    alt="DCGTP"
-                  />
-                </a>
-              </div>
-              <div className="flex-1 flex justify-center">
-                <NavigationMenu className="z-[9999] flex-1">
-                  <NavigationMenuList>
-                    {menuItems.map((item, index) => (
-                      <NavigationMenuItem key={index}>
-                        {item.subMenu ? (
-                          <>
-                            <NavigationMenuTrigger>
-                              <span className="font-bold uppercase">
-                                {item.title}
-                              </span>
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                              <div className="flex w-[400px] md:w-[500px] lg:w-[600px] gap-5 p-4">
-                                <div className="w-1/3">
-                                  <NavigationMenuLink asChild>
-                                    <a
-                                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted no-underline outline-none focus:shadow-md relative overflow-hidden"
-                                      href="/"
-                                    >
-                                      <Image
-                                        src={item.subMenuCover}
-                                        alt="alt"
-                                        layout="fill"
-                                        objectFit="cover"
-                                      />
-                                    </a>
-                                  </NavigationMenuLink>
-                                </div>
-                                <div className="w-2/3">
-                                  <ul className="grid gap-3 md:grid-cols-2">
-                                    {item.subMenu.map((subItem, x) => (
-                                      <ListItem
-                                        key={x}
-                                        href={subItem.href}
-                                        title={subItem.title}
-                                      >
-                                        {subItem.description}
-                                      </ListItem>
-                                    ))}
-                                  </ul>
-                                </div>
+        <div className="px-4 sm:px-6 hidden md:block">
+          <div className="flex justify-between items-center md:justify-start md:space-x-10 py-1">
+            <div className="flex justify-start">
+              <a href="/">
+                <img
+                  src="/static/images/logo-main-nav.jpeg"
+                  className="h-20"
+                  alt="DCGTP"
+                />
+              </a>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <NavigationMenu className="z-[9999] flex-1">
+                <NavigationMenuList>
+                  {menuItems.map((item, index) => (
+                    <NavigationMenuItem key={index}>
+                      {item.subMenu ? (
+                        <>
+                          <NavigationMenuTrigger>
+                            <span className="font-bold uppercase">
+                              {item.title}
+                            </span>
+                          </NavigationMenuTrigger>
+                          <NavigationMenuContent>
+                            <div className="flex w-[400px] md:w-[500px] lg:w-[600px] gap-5 p-4">
+                              <div className="w-1/3">
+                                <NavigationMenuLink asChild>
+                                  <a
+                                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted no-underline outline-none focus:shadow-md relative overflow-hidden"
+                                    href="/"
+                                  >
+                                    <Image
+                                      src={item.subMenuCover}
+                                      alt="alt"
+                                      layout="fill"
+                                      objectFit="cover"
+                                    />
+                                  </a>
+                                </NavigationMenuLink>
                               </div>
-                            </NavigationMenuContent>
-                          </>
-                        ) : (
-                          <Link href={item.href} legacyBehavior passHref>
-                            <NavigationMenuLink
-                              className={navigationMenuTriggerStyle()}
-                            >
-                              <span className="font-bold uppercase">
-                                {item.title}
-                              </span>
-                            </NavigationMenuLink>
-                          </Link>
-                        )}
-                      </NavigationMenuItem>
-                    ))}
-                  </NavigationMenuList>
-                </NavigationMenu>
-              </div>
+                              <div className="w-2/3">
+                                <ul className="grid gap-3 md:grid-cols-2">
+                                  {item.subMenu.map((subItem, x) => (
+                                    <ListItem
+                                      key={x}
+                                      href={subItem.href}
+                                      title={subItem.title}
+                                    >
+                                      {subItem.description}
+                                    </ListItem>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          </NavigationMenuContent>
+                        </>
+                      ) : (
+                        <Link href={item.href} legacyBehavior passHref>
+                          <NavigationMenuLink
+                            className={navigationMenuTriggerStyle()}
+                          >
+                            <span className="font-bold uppercase">
+                              {item.title}
+                            </span>
+                          </NavigationMenuLink>
+                        </Link>
+                      )}
+                    </NavigationMenuItem>
+                  ))}
+                </NavigationMenuList>
+              </NavigationMenu>
+            </div>
 
-              <div className="py-5 border-b flex justify-center">
-                <a
-                  target="_blank"
-                  href="https://finances.gouv.cd/"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
-                    className="h-20"
-                    alt="Ministère des finances"
-                  />
-                </a>
-              </div>
+            <div className="py-5 border-b flex justify-center">
+              <a
+                target="_blank"
+                href="https://finances.gouv.cd/"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
+                  className="h-20"
+                  alt="Ministère des finances"
+                />
+              </a>
             </div>
           </div>
-        </DesktopView>
-        <MobileView>
-          <div className="px-4 sm:px-6">
-            <div className="flex justify-between items-center md:justify-start md:space-x-10 py-2">
-              <Button size={"icon"} onClick={() => setSheetOpen(true)}>
-                <HambergerMenu className="size-8" />
-              </Button>
+        </div>
+        <div className="px-4 sm:px-6 md:hidden">
+          <div className="flex justify-between items-center md:justify-start md:space-x-10 py-2">
+            <Button size={"icon"} onClick={() => setSheetOpen(true)}>
+              <HambergerMenu className="size-8" />
+            </Button>
 
-              <div className="flex gap-0 justify-start">
-                <a href="/">
-                  <img
-                    src="/static/images/logo-main-nav.jpeg"
-                    className="h-12"
-                    alt="DCGTP"
-                  />
-                </a>
+            <div className="flex gap-0 justify-start">
+              <a href="/">
+                <img
+                  src="/static/images/logo-main-nav.jpeg"
+                  className="h-12"
+                  alt="DCGTP"
+                />
+              </a>
 
-                <a
-                  target="_blank"
-                  href="https://finances.gouv.cd/"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
-                    className="h-12"
-                    alt="Ministère des finances"
-                  />
-                </a>
-              </div>
+              <a
+                target="_blank"
+                href="https://finances.gouv.cd/"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://www.dgtcp.cd/wp-content/themes/site-theme/images/logo-finances.png"
+                  className="h-12"
+                  alt="Ministère des finances"
+                />
+              </a>
             </div>
           </div>
-        </MobileView>
+        </div>
       </div>
       <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
         <SheetContent side={"top"}>
