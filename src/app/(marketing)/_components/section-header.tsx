@@ -345,25 +345,25 @@ export default function HeaderSection() {
                     {item.subMenu ? (
                       item.subMenu.map((subItem, y) => (
                         <div className="py-1" key={y}>
-                          <Link href={subItem.href}>
+                          <a href={subItem.href}>
                             <div className="flex items-center gap-2">
                               <ArrowSquareRight className="size-3" />
                               <span className="font-medium uppercase text-sm">
                                 {subItem.title}
                               </span>
                             </div>
-                          </Link>
+                          </a>
                         </div>
                       ))
                     ) : (
-                      <Link key={x} href={item.href}>
+                      <a key={x} href={item.href}>
                         <div className="flex items-center gap-2">
                           <ArrowSquareRight className="size-3" />
                           <span className="font-medium uppercase text-sm">
                             {item.title}
                           </span>
                         </div>
-                      </Link>
+                      </a>
                     )}
                   </AccordionContent>
                 </AccordionItem>
