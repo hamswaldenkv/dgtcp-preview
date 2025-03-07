@@ -8,9 +8,9 @@ interface Props {
 }
 
 export const MobileView = ({ children }: Props) => (
-  <MediaQuery maxWidth={768}>{children}</MediaQuery>
+  <MediaQuery maxWidth={1224}>{children}</MediaQuery>
 );
 
 export const DesktopView = ({ children }: Props) => (
-  <MediaQuery minWidth={768}>{children}</MediaQuery>
+  <MediaQuery minWidth={1224}>{children}</MediaQuery>
 );
