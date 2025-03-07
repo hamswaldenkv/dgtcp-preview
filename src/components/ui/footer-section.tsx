@@ -151,6 +151,36 @@ export function FooterSection({
                   </span>
                 </a>
               </li>
+              <li>
+                <a
+                  className="hover:text-primary2"
+                  href="https://fonctionpublique.gouv.cd/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="text-sm font-medium">Fonction publique</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-primary2"
+                  href="https://fonctionpublique.gouv.cd/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="text-sm font-medium">Fonction publique</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-primary2"
+                  href="https://budget.gouv.cd/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="text-sm font-medium">Budget</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
