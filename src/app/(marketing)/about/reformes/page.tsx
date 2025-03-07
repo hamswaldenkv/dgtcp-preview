@@ -26,19 +26,19 @@ export default function Page() {
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <ArrowSquareRight className="size-4 text-primary m-0" />
-              <span className="text-lg">
+              <span className="text-base">
                 La création d’un réseau national des comptables (RNC).
               </span>
             </div>
             <div className="flex items-center gap-2">
               <ArrowSquareRight className="size-4 text-primary m-0" />
-              <span className="text-lg">
+              <span className="text-base">
                 La mise en place d’un Compte Unique du Trésor. (CUT)
               </span>
             </div>
             <div className="flex items-center gap-2">
               <ArrowSquareRight className="size-4 text-primary m-0" />
-              <span className="text-lg m-0">
+              <span className="text-base m-0">
                 La déconcentration de l’ordonnancement
               </span>
             </div>
