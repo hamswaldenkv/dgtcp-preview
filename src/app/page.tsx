@@ -37,7 +37,7 @@ export default function Home() {
             href: "/about/leadership",
             title: "Equipe directive",
             description: "Découvrez l'equipe directrice de la DGTCP",
-            photo_url: "/static/images/about-office-01.webp",
+            photo_url: "/static/images/gallery-photo-06.jpeg",
           },
         ]}
       />
