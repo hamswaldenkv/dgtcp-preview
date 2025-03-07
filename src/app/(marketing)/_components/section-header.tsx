@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { ArrowSquareRight, Call, HambergerMenu } from "iconsax-react";
-import { DesktopView, MobileView } from "@/components/responsive";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -175,7 +174,7 @@ export default function HeaderSection() {
             className="text-black inline-flex items-center font-semibold hover:underline md:text-sm"
           >
             <Call className="mr-2 size-4 transition-transform" />
-            <span>Appelez le service client</span>
+            <span>Appelez le secrétariat</span>
           </a>
 
           <ul className="flex space-x-2">
@@ -294,7 +293,11 @@ export default function HeaderSection() {
         </div>
         <div className="px-4 sm:px-6 md:hidden">
           <div className="flex justify-between items-center md:justify-start md:space-x-10 py-2">
-            <Button size={"icon"} onClick={() => setSheetOpen(true)}>
+            <Button
+              variant={"outline"}
+              size={"icon"}
+              onClick={() => setSheetOpen(true)}
+            >
               <HambergerMenu className="size-8" />
             </Button>
 
@@ -340,7 +343,7 @@ export default function HeaderSection() {
                   <AccordionContent>
                     {item.subMenu ? (
                       item.subMenu.map((subItem, y) => (
-                        <div className="py-1" key={y}>
+                        <div className="py-3" key={y}>
                           <a href={subItem.href}>
                             <div className="flex items-center gap-2">
                               <ArrowSquareRight className="size-3" />
