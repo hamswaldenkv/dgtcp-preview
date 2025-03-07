@@ -5,7 +5,7 @@ import React from "react";
 export default function SectionChairman() {
   return (
     <div className="bg-[#112673]">
-      <section className="py-20 container mx-auto">
+      <section className="py-20 max-w-[90%] md:container mx-auto">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col gap-12 md:flex-row">
             <img
@@ -54,7 +54,7 @@ export default function SectionChairman() {
                 les pertes de recettes fiscales dues aux transferts de bénéfices
                 vers des juridictions à faible fiscalité
               </p>
-              <ul className="mt-10 flex-wrap items-center gap-6 space-y-6 md:flex md:space-y-0 text-white">
+              <ul className="mt-10 flex-wrap items-center gap-6 space-y-6 hidden md:flex md:space-y-0 text-white">
                 <li>
                   <a
                     className="flex items-center gap-3"
