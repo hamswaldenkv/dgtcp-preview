@@ -28,12 +28,6 @@ const sections = [
     title: "Directeurs adjoints",
     members: [
       {
-        name: "--------",
-        role: "DG/TR",
-        photo_url: "/static/images/profile.jpg",
-        biography: ["Biographie du Directeur adjoint, Techniques et Réformes"],
-      },
-      {
         name: "KINDUELO LUMBU Lyvie",
         role: "DGA/AF",
         photo_url: "/static/images/team-profile-lyvie.jpeg",
@@ -144,7 +138,7 @@ export default function Page() {
                   "grid gap-5 md:gap-8",
                   section.members.length > 1
                     ? "grid-cols-1 md:grid-cols-2"
-                    : "grid-cols-1"
+                    : "grid-cols-1 md:grid-cols-2"
                 )}
                 aria-label="layout-grid-equals"
               >
