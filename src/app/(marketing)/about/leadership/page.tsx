@@ -56,7 +56,7 @@ const sections = [
       {
         name: "MOKAKO KOLO Lydia",
         role: "Direction des moyens généraux du personnel",
-        photo_url: "/static/images/team-profile-lydia.jpeg",
+        photo_url: "/static/images/team-profile-sulia.jpeg",
         biography: [
           "Experte en économie monétaire et gestion administrative, actuellement Directrice des Moyens Généraux et du Personnel à la Direction Générale du Trésor et de la Comptabilité Publique (DGTCP) depuis 2023. Doctorante en Économie monétaire et internationale à l’Université Protestante au Congo (UPC), elle détient également une licence dans la même spécialité obtenue en 2003. Son parcours académique est enrichi par diverses formations en anglais (Magri’s Institute, Afrique du Sud), comptabilité bancaire (IFBA, Angola) et informatique (CERIG, ISC Kinshasa).",
           "Son expérience professionnelle est marquée par des fonctions de haut niveau dans le secteur public et privé, notamment en tant que Conseillère du Vice-Premier Ministre, Ministre de la Fonction Publique (2021-2023), Chef de division à la DGRAD (2020) et Consultante à la Présidence de la RDC (Cabinet Vital Kamerhe, 2019). Elle a également occupé des postes de direction en Angola, notamment comme Responsable des Ressources Humaines du groupe Carrinho (2006) et Assistante du Chef d’État-Major général angolais en matière de Coopération Internationale (2005).",
@@ -76,7 +76,7 @@ const sections = [
       {
         name: "SULIA KITAMBALA Mireille",
         role: "Direction du Trésor et Moyens de Financement",
-        photo_url: "/static/images/team-profile-sulia.jpeg",
+        photo_url: "/static/images/team-profile-lydia.jpeg",
         biography: [
           "Diplômée en Sciences Économiques / Économie Appliquée et elle possède une solide expérience dans la gestion des finances publiques et du Trésor.",
           "Madame Mireille Sulia a occupé plusieurs postes de haut niveau, notamment Directeur de la Direction du Trésor et Moyens de Financement, Directeur de la Direction du Trésor et de l’Ordonnancement, ainsi qu’Ordonnateur Délégué du Gouvernement. Il a également exercé en tant que Chef de Bureau Relations avec les Centres d’Ordonnancement, Chef de Cellule Ressources Humaines et Tutelle, et Vérificatrice au Trésor.",
