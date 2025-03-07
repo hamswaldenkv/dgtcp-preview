@@ -28,9 +28,9 @@ export default function Home() {
             photo_url: "/static/images/gallery-photo-03.jpeg",
           },
           {
-            href: "/about/attributions",
-            title: "Attributions",
-            description: "Attributions de la DGTCP",
+            href: "/about/reformes",
+            title: "Réformes",
+            description: "Réformes de la DGTCP",
             photo_url: "/static/images/gallery-photo-02.jpeg",
           },
           {
