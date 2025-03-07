@@ -5,7 +5,7 @@ import React from "react";
 export default function FeatureSection() {
   return (
     <div className="bg-white">
-      <section className="py-32 container mx-auto">
+      <section className="py-32 max-w-[70%] md:container mx-auto">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col gap-12 md:flex-row">
             <div className="md:w-5/12 lg:p-10">
@@ -112,7 +112,7 @@ export default function FeatureSection() {
               </ul> */}
             </div>
             <div
-              className="md:w-7/12 grid grid-cols-2 gap-4"
+              className="md:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-4"
               aria-label="layout-grid-equals"
             >
               {[
