@@ -25,34 +25,68 @@ export default function SectionChairman() {
                 </h2>
               </div>
               <p className="mt-1 text-white md:mt-6">
-                Concernant les instruments multilatéraux dans le domaine fiscal,
-                il est important de noter que des fonds importants sont
-                transférés de la République démocratique du Congo vers des
-                juridictions à fiscalité privilégiée ou des paradis fiscaux par
-                des stratégies d'optimisation fiscale employées par les
-                multinationales opérant dans notre pays. Cette optimisation
-                agressive, particulièrement dans les secteurs extractifs qui
-                représentant plus de 70 % de la production minière, empêche
-                notre pays de mobiliser les recettes nécessaires au financement
-                de son programme d'action.
+                La gestion des finances publiques de notre pays est à un
+                tournant décisif. Pendant trop longtemps, notre système a été
+                entravé par des mécanismes obsolètes, un cadre juridique
+                inadapté et une gouvernance financière qui ne garantissait ni
+                l’efficacité ni la transparence nécessaire à une gestion
+                optimale des ressources publiques. Face à ces défis, le
+                Gouvernement, sous l’impulsion de Son Excellence le Président de
+                la République Félix-Antoine Tshisekedi Tshilombo et la
+                coordination de Son Excellence Madame la première ministre
+                Judith Suminwa, a engagé des réformes profondes, structurantes
+                et résolument tournées vers l’avenir.
               </p>
               <p className="mt-1 text-white md:mt-6">
-                Pour contrer ce phénomène, la République démocratique du Congo a
-                signé en octobre dernier deux conventions fiscales. La première
-                concerne la lutte contre l'érosion de la base d'imposition et
-                les transferts des bénéfices (BEPS), tandis que la seconde porte
-                sur la règle d'assujettissement à l'impôt. La signature de ces
-                deux instruments s'inscrit dans le cadre de la matérialisation
-                de la vision de Son Excellence Monsieur le Président de la
-                République, Félix-Antoine Tshisekedi Tshilombo, qui a assigné au
-                gouvernement la mission d'améliorer la mobilisation des recettes
-                publiques afin de financer les projets de développement.
+                Notre vision est claire : moderniser la gestion des finances
+                publiques en instaurant un cadre plus rigoureux, plus
+                transparent et plus performant. Pour ce faire, nous avons
+                identifié des actions prioritaires qui permettront de corriger
+                les faiblesses du système actuel.
               </p>
               <p className="mt-1 text-white md:mt-6">
-                Le Président de l'Assemblée nationale et les membres du Bureau
-                saluent cette initiative, qui vise à réduire significativement
-                les pertes de recettes fiscales dues aux transferts de bénéfices
-                vers des juridictions à faible fiscalité
+                Il s’agit notamment de :
+                <ul className="list-disc ml-5">
+                  <li>
+                    L’opérationnalisation de la Direction Générale du Trésor et
+                    de la Comptabilité Publique (DGTCP), qui constitue un pilier
+                    essentiel pour assurer une gestion efficace des finances de
+                    l’État.
+                  </li>
+                  <li>
+                    La mise en place du Compte Unique du Trésor, un instrument
+                    clé pour centraliser et rationaliser la gestion des
+                    ressources financières, éviter la dispersion des fonds et
+                    améliorer la trésorerie publique.
+                  </li>
+                  <li>
+                    Le déploiement du Réseau National des Comptables Publics,
+                    garantissant une exécution budgétaire plus fluide et mieux
+                    encadrée, où chaque acteur assume pleinement son rôle.
+                  </li>
+                </ul>
+              </p>
+              <p className="mt-1 text-white md:mt-6">
+                Cependant, la mise en œuvre de ces réformes ne doit pas être un
+                simple ajustement administratif. Il s’agit d’un véritable
+                changement de paradigme. Nous devons veiller à ce que chaque
+                décision prise s’inscrive dans une logique de cohérence avec les
+                textes existants, tout en restant fidèle aux objectifs de bonne
+                gouvernance financière que nous poursuivons.
+              </p>
+              <p className="mt-1 text-white md:mt-6">
+                Nous avons fait le choix de la transparence, de la rigueur et de
+                la modernisation. Notre ambition est de garantir que chaque
+                franc public soit utilisé de manière optimale pour le
+                développement du pays et l’amélioration des conditions de vie de
+                nos concitoyens.
+              </p>
+              <p className="mt-1 text-white md:mt-6">
+                Nous sommes conscients que toute réforme suscite des
+                interrogations et des résistances. Mais nous sommes déterminés.
+                Cette transformation est nécessaire et inévitable pour bâtir une
+                administration financière solide, crédible et au service du
+                développement de notre nation. Ensemble, nous réussirons.
               </p>
               <ul className="mt-10 flex-wrap items-center gap-6 space-y-6 hidden md:flex md:space-y-0 text-white">
                 <li>
