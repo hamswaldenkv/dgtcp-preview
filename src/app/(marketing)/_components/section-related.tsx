@@ -15,8 +15,11 @@ interface Props {
 export default function SectionRelated({ links }: Props) {
   return (
     <div className="py-20 bg-slate-300/10">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-3 gap-5" aria-label="layout-grid-equals">
+      <div className="max-w-[90%] md:container mx-auto">
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-5"
+          aria-label="layout-grid-equals"
+        >
           {links.map((link, index) => (
             <Link key={index} href={link.href}>
               <div className="bg-white hover:bg-primary/10 transition duration-300 animate-appear shadow-sm">
