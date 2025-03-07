@@ -6,8 +6,8 @@ import React from "react";
 export default function SectionMainText() {
   return (
     <section className="bg-white">
-      <div className="container mx-auto flex justify-center items-center p-10 py-24 gap-10">
-        <div className="flex-1 flex justify-end">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center items-center p-10 md:py-24 gap-10">
+        <div className="md:flex-1 hidden md:flex justify-end">
           <div>
             <Image
               src="/static/images/logo-main-square.jpeg"
@@ -18,7 +18,7 @@ export default function SectionMainText() {
           </div>
         </div>
 
-        <div className="w-1 h-[13rem] bg-slate-100"></div>
+        <div className="w-full h-0 md:w-1 md:h-[13rem] bg-slate-100"></div>
         <div className="flex-1 space-y-2">
           <h3 className="text-black text-sm md:text-base font-bold">
             Notre principale mission
