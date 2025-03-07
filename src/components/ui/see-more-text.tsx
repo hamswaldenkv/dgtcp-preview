@@ -52,7 +52,7 @@ const SeeMoreText = ({
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-md md:max-w-lg glassmorphism animate-scale-in z-[99999999]">
+        <DialogContent className="sm:max-w-md md:max-w-2xl glassmorphism animate-scale-in z-[99999999]">
           <DialogHeader>
             <DialogTitle className="text-xl font-medium mb-2">
               {title}

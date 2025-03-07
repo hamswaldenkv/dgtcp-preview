@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import SectionHeading from "../../_components/section-heading";
+import { PolySansWeb } from "@/constants/fonts";
 
 const sections = [
   {
@@ -12,7 +13,7 @@ const sections = [
     members: [
       {
         name: "MAABE MUANYIMI Serge",
-        role: "DG/TR",
+        role: "DG/AI",
         photo_url: "/static/images/leadership-001.jpg",
         biography: [
           "Mr. Maabe Muanyimi Serge est un expert en droit, finances publiques et réformes administratives, actuellement Directeur Général Adjoint en charge des questions techniques et de réformes. Il est doctorant en DEA à la FED de l’UCC et possède plusieurs diplômes de niveau Bac+5 en droit (UNIKIN), sciences économiques (UPC) et sciences politiques et administratives (UPN).",
@@ -27,15 +28,10 @@ const sections = [
     title: "Directeurs adjoints",
     members: [
       {
-        name: "MAABE MUANYIMI Serge",
+        name: "--------",
         role: "DG/TR",
-        photo_url: "/static/images/leadership-001.jpg",
-        biography: [
-          "Mr. Maabe Muanyimi Serge est un expert en droit, finances publiques et réformes administratives, actuellement Directeur Général Adjoint en charge des questions techniques et de réformes. Il est doctorant en DEA à la FED de l’UCC et possède plusieurs diplômes de niveau Bac+5 en droit (UNIKIN), sciences économiques (UPC) et sciences politiques et administratives (UPN).",
-          "Avocat inscrit au barreau de Matete, Kinshasa, il a également occupé des fonctions politiques majeures, notamment député provincial honoraire de l’Assemblée Provinciale de Kinshasa (APK) pendant 12 ans, où il a été membre de la Commission ÉcoFin et rapporteur du bureau.",
-          "Son parcours administratif est marqué par des responsabilités de haut niveau, telles que Directeur de Cabinet du Gouverneur de l’ex-Province du Kasaï Occidental, Directeur Provincial de la Direction du Contrôle des Marchés Publics de Kinshasa, ainsi que Conseiller au Cabinet des Ministres des Affaires Sociales et des Mines. Passionné de recherche en finances publiques et politiques publiques, il a publié plusieurs ouvrages, dont Droit et Économie des Finances Publiques en RDC (Éditions L’Harmattan, Paris), et co-écrit Le Prince de Machiavel : Quelles leçons pour une bonne gouvernance publique aujourd’hui (Éditions Ishango).",
-          "En plus de son engagement académique et professionnel, il est Président-Fondateur de l’Atelier pour le Leadership, l’Excellence et la Formation (ALEF) et co-fondateur du think tank ISHANGO, témoignant de son implication dans la réflexion stratégique et la promotion de la bonne gouvernance.",
-        ],
+        photo_url: "/static/images/profile.jpg",
+        biography: ["Biographie du Directeur adjoint, Techniques et Réformes"],
       },
       {
         name: "KINDUELO LUMBU Lyvie",
@@ -135,7 +131,14 @@ export default function Page() {
         <div className="space-y-14">
           {sections.map((section, index) => (
             <div key={index} className="space-y-5">
-              <h2 className="text-xl font-semibold mb-4">{section.title}</h2>
+              <h2
+                className={cn(
+                  "text-2xl font-semibold mb-4",
+                  PolySansWeb.className
+                )}
+              >
+                {section.title}
+              </h2>
               <div
                 className={cn(
                   "grid gap-5 md:gap-8",
