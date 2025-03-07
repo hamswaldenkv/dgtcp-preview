@@ -23,7 +23,7 @@ export default function SectionRelated({ links }: Props) {
           {links.map((link, index) => (
             <Link key={index} href={link.href}>
               <div className="bg-white hover:bg-primary/10 transition duration-300 animate-appear shadow-sm">
-                <div className="h-[22rem] bg-slate-200 relative">
+                <div className="h-[10rem] md:h-[22rem] bg-slate-200 relative">
                   <Image
                     src={link.photo_url}
                     alt={link.title}
