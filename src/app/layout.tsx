@@ -14,10 +14,8 @@ export const metadata: Metadata = {
       "DGTCP - La Direction Générale de la Comptabilité et du Trésor Publique",
     description:
       "La Direction Générale de la Comptabilité et du Trésor Publique (DGTCP) est un service public du Ministère des Finances.",
-    url: "https://www.dgtcp.cd",
-    images: [
-      "https://www.dgtcp.cd/wp-content/uploads/2023/07/50040357423_57dc2a2ca0_c.jpg",
-    ],
+    url: "https://dgtcp-preview.vercel.app",
+    images: ["https://dgtcp-preview.vercel.app/static/images/bg-cover-01.jpg"],
   },
 };
 
