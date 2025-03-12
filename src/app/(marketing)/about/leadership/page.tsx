@@ -81,7 +81,7 @@ const sections = [
       {
         name: "MUNDELA MUANZA Franck",
         role: "Inspection de service du trésor",
-        photo_url: "/static/images/profile.jpg",
+        photo_url: "/static/images/team-profile-frank.jpeg",
         biography: [
           "Frank Mundela est titulaire d’une licence en sciences économiques obtenue à l'Université de Kinshasa en 1996, avec une spécialisation en économie publique et industrielle. Il détient également un graduat en sciences commerciales, option gestion financière, obtenu en 1989 à l’ISC/Kisangani, renforçant ainsi son expertise en gestion et en comptabilité publique.",
           "Actuellement, il occupe le poste d’Inspecteur-Coordonnateur des Services du Trésor au sein de la Direction Générale du Trésor et de la Comptabilité Publique, fonction qu'il exerce depuis novembre 2022. Auparavant, il a été Chef de Division Normalisation et Management Comptables entre 2018 et 2022, période durant laquelle il a supervisé la mise en place de normes et de procédures comptables.",
