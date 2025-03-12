@@ -37,7 +37,7 @@ const menuItems = [
     subMenuCover: "/static/images/bg-cover-01.jpg",
   },
   {
-    title: "L'organisation",
+    title: "Organisation",
     href: "/about",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     subMenuCover: "/static/images/bg-cover-01.jpg",
