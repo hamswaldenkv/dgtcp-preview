@@ -1,11 +1,11 @@
 "use client";
 
+import Image from "next/image";
+import { cn } from "@/lib/utils";
+
 import SeeMoreText from "@/components/ui/see-more-text";
 import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
 import SectionHeading from "../../_components/section-heading";
-import { PolySansWeb } from "@/constants/fonts";
 
 const sections = [
   {
@@ -131,14 +131,7 @@ export default function Page() {
         <div className="space-y-14">
           {sections.map((section, index) => (
             <div key={index} className="space-y-5">
-              <h2
-                className={cn(
-                  "text-2xl font-semibold mb-4",
-                  PolySansWeb.className
-                )}
-              >
-                {section.title}
-              </h2>
+              <h2 className={"text-2xl font-semibold mb-4"}>{section.title}</h2>
               <div
                 className={cn(
                   "grid gap-5 md:gap-8",
