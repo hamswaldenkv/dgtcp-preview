@@ -22,7 +22,7 @@ export default function SectionSubscribe() {
           <div className="flex-1 h-full bg-yellow-500" />
         </div>
 
-        <div className="max-w-[70%] py-12 md:py-0 md:max-w-2xl mx-auto space-y-3 flex-1 flex flex-col justify-center">
+        <div className="container lg:w-[75%] mx-auto px-12 py-12 lg:p-0 space-y-3 flex-1 flex flex-col justify-center">
           <h1 className="uppercase font-bold text-gray-500 text-xl">
             Restez avec nous
           </h1>
