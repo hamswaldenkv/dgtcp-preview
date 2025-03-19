@@ -117,24 +117,25 @@ export default function FeatureSection() {
             >
               {[
                 {
-                  title: "Note hebdomadaire des opérations du trésor",
+                  title: "Exécution du PTR au 30 septembre 2024",
                   description: "",
-                  link: "/actualites/rapports",
+                  link: "https://docs.google.com/document/d/1YbC7hDHXIwIfPKeuUCcMMBefcoFEZ6vg/edit?usp=drive_link&ouid=102562247311745483227&rtpof=true&sd=true",
                 },
                 {
-                  title: "Note Mensuelle des opérations du trésor",
+                  title:
+                    "NOTE SUR L’EXECUTION DU PTR A LA CLOTURE DU MOIS DE JUILLET 2024",
                   description: "",
-                  link: "/actualites/rapports",
+                  link: "https://drive.google.com/file/d/1cLfyNHGQTVfckfbz0ZrEZ5P-gg37-XcH/view?usp=drive_link",
                 },
                 {
-                  title: "Revue mensuelle des opérations du trésor",
+                  title: "NOTE SUR L’EXECUTION DU PTR AU 31 OCTOBRE 2024",
                   description: "",
-                  link: "/actualites/rapports",
+                  link: "https://docs.google.com/document/d/12bMMjZIhTT8rVR8ItFfguilBjAy53O_-/edit?usp=drive_link&ouid=102562247311745483227&rtpof=true&sd=true",
                 },
                 {
-                  title: "Rapport d'inspection des opérations du trésor",
+                  title: "NOTE TECHNIQUE SUR L’EVOLUTION DU PTR AU MOIS DE JUIN 2024",
                   description: "",
-                  link: "/actualites/rapports",
+                  link: "https://drive.google.com/file/d/1w_W5D7Ojb4vgm0gJ7-VUwVvfQh7hyAns/view?usp=drive_link",
                 },
               ].map((item, index) => (
                 <div
