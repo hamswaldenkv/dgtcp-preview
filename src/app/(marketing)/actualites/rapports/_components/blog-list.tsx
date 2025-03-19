@@ -1,16 +1,14 @@
 import { ArrowRight } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
+import { format } from "date-fns";
 
 interface Post {
   id: string;
   title: string;
   summary: string;
-  label: string;
-  author: string;
   published: string;
   url: string;
-  image: string;
   tags?: string[];
 }
 
@@ -23,32 +21,7 @@ interface BlogListProps {
 const BlogList = ({
   heading = "Rapports d'activité",
   description = "Decouvrez nos derniers événements publiés",
-  posts = [
-    {
-      id: "post-1",
-      title: "Programme d'action du gouvernement",
-      summary:
-        "Le Programme d'action du gouvernement est un document officiel du Ministère des Finances de la République Démocratique du Congo.",
-      label: "Presse",
-      author: "Lydia Kamuha",
-      published: "15 Feb 2025",
-      url: "/static/docs/0-cadre_organique-dgtcp-annexe decret.22.54.30.12.2022.pdf",
-      image: "/static/images/about-office-01.webp",
-      tags: ["Presse", "Actualités"],
-    },
-    {
-      id: "post-2",
-      title: "Manuel des procédures du circuit de la dépense publique",
-      summary:
-        "Le Manuel des procédures du circuit de la dépense publique est un document officiel du Ministère des Finances de la République Démocratique du Congo.",
-      label: "Presse",
-      author: "Lydia Kamuha",
-      published: "22 Feb 2025",
-      url: "/static/docs/0-cadre_organique-dgtcp-annexe decret.22.54.30.12.2022.pdf",
-      image: "/static/images/about-office-02.webp",
-      tags: ["Presse", "Actualités"],
-    },
-  ],
+  posts = [],
 }: BlogListProps) => {
   return (
     <section className="py-10">
@@ -63,22 +36,19 @@ const BlogList = ({
         </div>
 
         <div className="border border-border divide-y divide-border p-10">
-          {posts.map((post) => (
-            <Card
-              key={post.id}
-              className="border-0 bg-transparent shadow-none py-10"
-            >
+          {posts.map((post, x) => (
+            <Card key={x} className="border-0 bg-transparent shadow-none py-10">
               <div className="flex justify-start md:gap-x-8 lg:gap-x-12">
                 <div>
                   <div className="w-[4rem] rounded border border-border/50 overflow-hidden">
                     <div className="bg-primary h-[3rem] w-full flex flex-col justify-center items-center">
                       <span className="text-center text-2xl font-semibold text-white">
-                        10
+                        {format(post.published, "dd")}
                       </span>
                     </div>
                     <div className="w-full flex flex-col items-center justify-center py-2">
                       <span className="text-center text-lg font-semibold">
-                        Fevr.
+                        {format(post.published, "MMM")}
                       </span>
                     </div>
                   </div>
