@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <div className="min-h-[50vh] bg-white space-y-10">
-      <SectionHeading title="Attributions de la DGTCP" />
+      <SectionHeading title="Attributions" />
 
       <div className="container mx-auto gap-10">
         <h1 className="text-4xl font-bold">
