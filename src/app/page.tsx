@@ -2,47 +2,29 @@ import { Card, Facebook } from "iconsax-react";
 import { InstagramLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 
 import { FooterSection } from "@/components/ui/footer-section";
-import HeaderSection from "./(marketing)/_components/section-header";
-import FeatureSection from "./(marketing)/_components/section-feature";
-import SectionBlog from "./(marketing)/_components/section-blog";
-import SectionSubscribe from "./(marketing)/_components/section-subscribe";
-import SectionChairman from "./(marketing)/_components/section-chairman";
 import SectionHero from "./(marketing)/_components/section-hero";
-import SectionRelated from "./(marketing)/_components/section-related";
-import SectionMainText from "./(marketing)/_components/section-maintext";
+import HeaderSection from "./(marketing)/_components/section-header";
+import { SectionServices } from "./(marketing)/_components/section-services";
+import { CMS_SERVICES } from "@/constants/cms";
+import SectionCTA from "./(marketing)/_components/section-cta";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <HeaderSection />
       <SectionHero />
-      <SectionMainText />
-      <SectionChairman />
-      <FeatureSection />
-      <SectionRelated
-        links={[
-          {
-            href: "/about/missions",
-            title: "Missions",
-            description: "Missions de la DGTCP",
-            photo_url: "/static/images/gallery-photo-03.jpeg",
-          },
-          {
-            href: "/about/reformes",
-            title: "Réformes",
-            description: "Réformes de la DGTCP",
-            photo_url: "/static/images/gallery-photo-02.jpeg",
-          },
-          {
-            href: "/about/leadership",
-            title: "Equipe directive",
-            description: "Découvrez l'equipe directrice de la DGTCP",
-            photo_url: "/static/images/gallery-photo-06.jpeg",
-          },
-        ]}
+      <SectionServices
+        title="Nos services"
+        description="Découvrez nos services"
+        items={CMS_SERVICES.map((e, x) => ({
+          id: `item-${x}`,
+          title: e.title,
+          image: e.photo_url,
+          description: e.description,
+          href: e.href,
+        }))}
       />
-      <SectionBlog />
-      <SectionSubscribe />
+      <SectionCTA />
       <FooterSection
         logo={<Card className="h-10 w-10" />}
         brandName="i-Card"

@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function SectionSubscribe() {
+export default function SectionCTA() {
   return (
-    <section className="py-0">
+    <section className="py-12">
       <div className="max-w-full overflow-hidden border-y border-border bg-accent pt-10 md:pt-16 lg:pt-20">
         <div className="relative w-[90%] md:container mx-auto flex flex-col md:flex-row md:space-x-12">
           <div className="mb-[18rem] md:mb-28 md:w-2/3 lg:shrink-0 xl:mb-20 xl:w-1/2">

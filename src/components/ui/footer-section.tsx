@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { CMS_SERVICES } from "@/constants/cms";
 import Link from "next/link";
 
 interface FooterProps {
@@ -34,222 +35,118 @@ export function FooterSection({
   copyright,
 }: FooterProps) {
   return (
-    <footer className="bg-white w-full">
-      <div className="md:max-w-7xl mx-auto py-24 flex flex-col md:flex-row space-y-5 md:space-y-0">
-        <div className="flex justify-center md:justify-start">
-          <img
-            src="/static/images/logo-main-nav.jpeg"
-            className="h-28"
-            alt="DCGTP"
-          />
-        </div>
-        <div className="flex-1 flex md:border-l md:border-gray-300 md:mx-10 md:px-16 px-10">
-          <div className="flex-1">
-            <h1 className="font-bold font-hkgrotesk">Accès Rapide</h1>
-            <ul className="space-y-2 mt-5">
-              <li>
-                <Link className="hover:text-primary2" href="/about/history">
-                  <span className="text-sm font-medium">A propos</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="hover:text-primary2"
-                  href="/about/leaderboard-map"
-                >
-                  <span className="text-sm font-medium">Organisation</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="hover:text-primary2"
-                  href="/actualites/annonces"
-                >
-                  <span className="text-sm font-medium">Annonces</span>
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:text-primary2" href="/actualites/presse">
-                  <span className="text-sm font-medium">
-                    Communiqué de presse
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:text-primary2" href="/contact">
-                  <span className="text-sm font-medium">Contact</span>
-                </Link>
-              </li>
-            </ul>
+    <section className="py-16">
+      <div className="w-[90%] md:container mx-auto">
+        <footer>
+          <div className="relative mb-8 flex w-full flex-col gap-x-28 gap-y-8 md:flex-row md:justify-between md:gap-y-0">
+            <div className="max-w-96">
+              <div className="mb-6 flex items-center gap-3">
+                <div className="flex size-12 items-center justify-center rounded-lg border border-border bg-accent p-2">
+                  <img
+                    src="/static/images/header-logo.png"
+                    alt="placeholder logo"
+                    className="size-12 h-full w-full object-contain object-center"
+                  />
+                </div>
+                <h3 className="text-xl font-bold">Sunphenix.com</h3>
+              </div>
+              <p className="text-base font-medium text-muted-foreground">
+                Ideas reborn new
+              </p>
+            </div>
+            <div className="flex flex-col items-start gap-x-20 gap-y-14 xl:flex-row">
+              <div className="inline-grid w-fit grid-cols-1 gap-x-20 gap-y-14 sm:grid-cols-2">
+                <div className="h-fit w-min">
+                  <h4 className="mb-6 text-base font-semibold whitespace-nowrap">
+                    Services
+                  </h4>
+                  <ul className="space-y-3 text-base font-medium text-muted-foreground">
+                    {CMS_SERVICES.map((e, x) => (
+                      <li key={x}>
+                        <a
+                          href={e.href}
+                          className="text-base whitespace-nowrap hover:text-accent-foreground"
+                        >
+                          {e.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="h-fit w-min">
+                  <h4 className="mb-6 text-base font-semibold whitespace-nowrap">
+                    Metiers
+                  </h4>
+                  <ul className="space-y-3 text-base font-medium text-muted-foreground">
+                    <li>
+                      <a
+                        href="#"
+                        className="text-base whitespace-nowrap hover:text-accent-foreground"
+                      >
+                        Prestations métiers (BPO)
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-base whitespace-nowrap hover:text-accent-foreground"
+                      >
+                        Prestations techniques (ITO)
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-base whitespace-nowrap hover:text-accent-foreground"
+                      >
+                        Prestations à haute valeur ajoutée (KPO)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="w-full shrink-0 sm:w-fit">
+                <div className="mb-6 text-base font-semibold">
+                  Ne ratez aucun update
+                </div>
+                <form className="flex w-full flex-col justify-center gap-2 sm:flex-row">
+                  <label htmlFor="email" className="sr-only">
+                    Email
+                  </label>
+                  <input
+                    data-slot="input"
+                    className="border-input file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive lg:min-w-72"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                  <button
+                    data-slot="button"
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3"
+                  >
+                    Recevoir les updates
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div className="flex-1">
-            <h1 className="font-bold font-hkgrotesk">Liens Utiles</h1>
-            <ul className="space-y-2 mt-5">
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://presidence.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">Presidence</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://www.primature.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">Primature</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://senat.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">Sénat</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://finances.gouv.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">
-                    Ministère des finances
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://republique.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">
-                    Portail de la République
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://www.dgi.gouv.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">
-                    Direction Générale des Impôts
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://fonctionpublique.gouv.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">Fonction publique</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://fonctionpublique.gouv.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">Fonction publique</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-primary2"
-                  href="https://budget.gouv.cd/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-sm font-medium">Budget</span>
-                </a>
-              </li>
-            </ul>
+          <div className="flex flex-col items-baseline justify-between gap-8 border-t border-border pt-8 md:flex-row md:gap-16">
+            <div className="text-xs text-muted-foreground sm:text-sm">
+              © Sunphenix.com 2024
+            </div>
+            <div className="flex flex-col items-start gap-4 text-xs text-muted-foreground sm:text-sm md:flex-row lg:items-center">
+              <a href="/terms" className="hover:text-accent-foreground">
+                Conditions d'utilisation
+              </a>
+              <a href="/privacy" className="hover:text-accent-foreground">
+                Politique de confidentialité
+              </a>
+              <a href="#" className="hover:text-accent-foreground">
+                Cookies
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="justify-center md:justify-start hidden xl:inline">
-          <h1 className="font-bold font-hkgrotesk">Notre adresse</h1>
-          <div>
-            <span className="text-sm">14, Avenue Sergent Moke</span>
-          </div>
-          <div>
-            <span className="text-sm">Concession Safricas</span>
-          </div>
-          <div>
-            <span className="text-sm">Kinshasa - Gombe</span>
-          </div>
-          <div className="py-2">
-            <a
-              href="mailto:secretariat-dg@dgtcp.cd"
-              className="text-primary2 border border-primary2 hover:bg-primary2 hover:text-white px-2 py-2 flex items-center justify-center space-x-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                aria-hidden="true"
-                className="w-4 h-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-              <span className="text-base">secretariat-dg@dgtcp.cd</span>
-            </a>
-          </div>
-          <div className="py-2">
-            <a
-              href="tel:243819387049"
-              className="text-primary2 border border-primary2 hover:bg-primary2 hover:text-white px-2 py-2 flex items-center justify-center space-x-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                aria-hidden="true"
-                className="w-4 h-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </svg>
-              <span className="text-base">+243 819 387 049</span>
-            </a>
-          </div>
-        </div>
+        </footer>
       </div>
-      <div className="border-t border-slate-900/5 py-10 flex flex-col items-center px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-white">
-          <a href="/privacy-policy">Termes de confidentialité</a>
-          <div className="h-4 w-px bg-white" />
-          <a href="/termsofuse">Conditions d'utilisation</a>
-        </div>
-      </div>
-    </footer>
+    </section>
   );
 }

@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useCallback, useEffect, useState } from "react";
+import { ArrowRight, Call } from "iconsax-react";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { ArrowRight, ArrowLeft } from "iconsax-react";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 interface Slide {
   id: number;
@@ -44,128 +43,80 @@ const slides: Slide[] = [
   },
 ];
 
-const AUTO_SLIDE_INTERVAL = 5000; // 5 seconds
-
 export default function SectionHero() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [direction, setDirection] = useState<"left" | "right">("right");
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-
-  const nextSlide = useCallback(() => {
-    setDirection("right");
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  }, []);
-
-  const prevSlide = () => {
-    setDirection("left");
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
-  const goToSlide = (index: number) => {
-    setDirection(index > currentSlide ? "right" : "left");
-    setCurrentSlide(index);
-  };
-
-  // Auto-advance slides
-  useEffect(() => {
-    let intervalId: NodeJS.Timeout;
-
-    if (isAutoPlaying) {
-      intervalId = setInterval(() => {
-        nextSlide();
-      }, AUTO_SLIDE_INTERVAL);
-    }
-
-    return () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
-    };
-  }, [isAutoPlaying, nextSlide]);
-
   return (
-    <div className="bg-white">
-      <div className="relative h-[50vh] overflow-hidden bg-space-dark">
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={cn(
-              "absolute inset-0 transition-opacity duration-1000",
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            )}
-          >
-            {/** 
-            <div className="absolute inset-0 bg-black/40 z-10" />
-             */}
-            <Image
-              src={slide.image}
-              alt={slide.title}
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-0 z-20 p-8 pb-20">
-              <div className="container mx-auto bg-black/15 p-10 flex flex-col items-center">
-                <span className="inline-block px-3 py-1 mb-4 text-sm font-medium text-white bg-primary rounded-full text-center">
-                  {slide.category}
-                </span>
-                <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight animate-appear text-center">
-                  {slide.title}
-                </h2>
-                <p className="text-lg md:text-xl text-white max-w-2xl animate-appear text-center hidden">
-                  {slide.description}
-                </p>
+    <section>
+      <div className="container mx-auto flex flex-col items-center">
+        <div className="w-full overflow-clip rounded-lg bg-accent/50">
+          <div className="grid items-center gap-8 lg:grid-cols-2">
+            <div className="container flex flex-col items-center px-[4rem] py-16 text-center lg:mx-auto lg:items-start lg:px-[4rem] lg:py-12 lg:text-left">
+              <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+                Ideas reborn new
+              </h1>
+              <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
+                Sunphenix est une entreprise de marketing relationnel :
+                <ul className="text-muted-foreground">
+                  <li>
+                    Prestations métiers (BPO): sous-traitance de personnel
+                    commercial, bancaires, téléopérateurs Call Center etc…
+                  </li>
+                  <li>
+                    Prestations techniques (ITO): Télécommunications, mise en
+                    œuvre de call center (CRM, IPBX); Sms Alert
+                  </li>
+                  <li>
+                    Prestations à haute valeur ajoutée (KPO): Consultance
+                    sectorielle (Mystery Shopping, Benchmark, Sondage…)
+                  </li>
+                </ul>
+              </p>
 
-                <div className="mt-6 flex items-center space-x-2 md:mt-8">
-                  <Link
-                    href={slide.url}
-                    className="text-white inline-flex items-center font-semibold hover:underline md:text-base"
-                  >
-                    <span>Voir plus</span>
-                    <ArrowRight className="ml-2 size-4 transition-transform" />
-                  </Link>
+              <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
+                <Button data-slot="button" size={"lg"}>
+                  <Call className="size-3 mr-1" />
+                  Contactez notre service client
+                </Button>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <div className="relative aspect-[7/8] h-full w-full">
+                <div className="absolute top-[12%] right-[50%] flex aspect-square w-[24%] justify-center rounded-lg border border-border bg-accent overflow-hidden">
+                  <Image
+                    src="/static/images/service-enquete.webp"
+                    alt="alt"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="absolute top-[36%] right-[50%] flex aspect-[5/6] w-[40%] justify-center rounded-lg border border-border bg-accent overflow-hidden">
+                  <Image
+                    src="/static/images/service-call-center.webp"
+                    alt="alt"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="absolute bottom-[36%] left-[54%] flex aspect-[5/6] w-[40%] justify-center rounded-lg border border-border bg-accent overflow-hidden">
+                  <Image
+                    src="/static/images/service-telecom.webp"
+                    alt="alt"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="absolute bottom-[12%] left-[54%] flex aspect-square w-[24%] justify-center rounded-lg border border-border bg-accent overflow-hidden">
+                  <Image
+                    src="/static/images/service-benchmark.jpeg"
+                    alt="alt"
+                    layout="fill"
+                    objectFit="cover"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        ))}
-
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex gap-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={cn(
-                "w-2 h-2 rounded-full transition-all duration-300",
-                index === currentSlide
-                  ? "w-8 bg-white"
-                  : "bg-white/50 hover:bg-white"
-              )}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
         </div>
-
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
-          aria-label="Previous slide"
-        >
-          <ArrowLeft className="w-6 h-6" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
-          aria-label="Next slide"
-        >
-          <ArrowRight className="w-6 h-6" />
-        </button>
       </div>
-      <div className="h-1 flex w-full">
-        <div className="flex-1 h-full bg-primary" />
-        <div className="flex-1 h-full bg-red-500" />
-        <div className="flex-1 h-full bg-yellow-500" />
-      </div>
-    </div>
+    </section>
   );
 }

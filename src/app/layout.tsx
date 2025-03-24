@@ -2,20 +2,18 @@ import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
-import { CooperHewitt } from "@/constants/fonts";
+import { PolySansWeb } from "@/constants/fonts";
 
 export const metadata: Metadata = {
-  title:
-    "DGTCP - La Direction Générale de la Comptabilité et du Trésor Publique",
-  description:
-    "La Direction Générale de la Comptabilité et du Trésor Publique (DGTCP) est un service public du Ministère des Finances.",
+  title: "Sunphenix - ideas reborn new.",
+  description: "ideas reborn new.",
   openGraph: {
-    title:
-      "DGTCP - La Direction Générale de la Comptabilité et du Trésor Publique",
-    description:
-      "La Direction Générale de la Comptabilité et du Trésor Publique (DGTCP) est un service public du Ministère des Finances.",
-    url: "https://dgtcp-preview.vercel.app",
-    images: ["https://dgtcp-preview.vercel.app/static/images/bg-cover-01.jpg"],
+    title: "Sunphenix - ideas reborn new.",
+    description: "ideas reborn new.",
+    url: "https://sunphenix-preview.vercel.app",
+    images: [
+      "https://sunphenix-preview.vercel.app/static/images/bg-cover-01.jpg",
+    ],
   },
 };
 
@@ -26,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${CooperHewitt.className} antialiased`}>
+      <body className={`${PolySansWeb.className} antialiased`}>
         {children}
         <Toaster />
       </body>
