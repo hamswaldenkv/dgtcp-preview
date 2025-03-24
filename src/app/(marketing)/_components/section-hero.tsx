@@ -46,33 +46,39 @@ const slides: Slide[] = [
 export default function SectionHero() {
   return (
     <section>
-      <div className="container mx-auto flex flex-col items-center">
-        <div className="w-full overflow-clip rounded-lg bg-accent/50">
+      <div className="flex flex-col items-center bg-accent/50">
+        <div className="container mx-auto w-full overflow-clip rounded-lg">
           <div className="grid items-center gap-8 lg:grid-cols-2">
             <div className="container flex flex-col items-center px-[4rem] py-16 text-center lg:mx-auto lg:items-start lg:px-[4rem] lg:py-12 lg:text-left">
               <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
                 Ideas reborn new
               </h1>
-              <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
+              <p className="max-w-xl text-muted-foreground lg:text-xl">
                 Sunphenix est une entreprise de marketing relationnel :
-                <ul className="text-muted-foreground">
-                  <li>
-                    Prestations métiers (BPO): sous-traitance de personnel
-                    commercial, bancaires, téléopérateurs Call Center etc…
-                  </li>
-                  <li>
-                    Prestations techniques (ITO): Télécommunications, mise en
-                    œuvre de call center (CRM, IPBX); Sms Alert
-                  </li>
-                  <li>
-                    Prestations à haute valeur ajoutée (KPO): Consultance
-                    sectorielle (Mystery Shopping, Benchmark, Sondage…)
-                  </li>
-                </ul>
               </p>
+              <ul className="my-5 text-muted-foreground list-inside list-disc ml-5">
+                <li>
+                  Prestations métiers (BPO): sous-traitance de personnel
+                  commercial, bancaires, téléopérateurs Call Center etc…
+                </li>
+                <li>
+                  Prestations techniques (ITO): Télécommunications, mise en
+                  œuvre de call center (CRM, IPBX); Sms Alert
+                </li>
+                <li>
+                  Prestations à haute valeur ajoutée (KPO): Consultance
+                  sectorielle (Mystery Shopping, Benchmark, Sondage…)
+                </li>
+              </ul>
 
               <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-                <Button data-slot="button" size={"lg"}>
+                <Button
+                  data-slot="button"
+                  size={"lg"}
+                  onClick={() => {
+                    window.open("tel:+243822050048");
+                  }}
+                >
                   <Call className="size-3 mr-1" />
                   Contactez notre service client
                 </Button>

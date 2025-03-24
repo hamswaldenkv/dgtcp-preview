@@ -30,7 +30,7 @@ const menuItems = [
   },
   {
     title: "Services",
-    href: "/services",
+    href: "/#services",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {

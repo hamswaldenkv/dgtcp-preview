@@ -100,7 +100,7 @@ const SectionServices = ({
   }, [carouselApi]);
 
   return (
-    <section className="py-12">
+    <section className="py-12" id="services">
       <div className="w-[90%] md:container mx-auto">
         <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
           <div className="flex flex-col gap-4">
