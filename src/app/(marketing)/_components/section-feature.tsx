@@ -111,7 +111,7 @@ export default function FeatureSection() {
                 </li>
               </ul> */}
             </div>
-            <div
+            {/** <div
               className="md:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-4"
               aria-label="layout-grid-equals"
             >
@@ -163,7 +163,7 @@ export default function FeatureSection() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
