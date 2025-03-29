@@ -1,4 +1,4 @@
-export const REPORT_DOCUMENTS = [
+export const REPORT_DOCUMENTS1 = [
   {
     id: "document-001",
     title: "NOTE TECHNIQUE SUR L’EVOLUTION DU PTR AU 26 JUILLET 2024",
@@ -63,3 +63,5 @@ export const REPORT_DOCUMENTS = [
     tags: ["PTR", "2024"],
   },
 ];
+
+export const REPORT_DOCUMENTS = [];
